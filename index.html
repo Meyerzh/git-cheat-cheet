@@ -62,6 +62,7 @@ git init
 <p>添加后，在终端（Terminal）中输入
 </p>
 <pre><code class="language-bash">ssh -T git@github.com
+ssh -T git@github2.com
 
 ssh -T git@gitee.com
 </code></pre>
@@ -160,6 +161,17 @@ git cherry-pick e43a6
 <p>当需需要代码回滚到前一个版本</p>
 <pre><code class="language-bash">git reset --hard HEAD^
 git reset --hard commid_id # 回滚代码到制定版本
+</code></pre>
+</div>
+
+<!-- git Checkout -->
+<div class="item">
+<h2 id="Checkout">Checkout</h2>
+<p>查看commit 的代码(不用 rest)</p>
+<pre><code class="language-bash">git checkout commit-id
+</code></pre>
+<p>从 commit-id 检出分支</p>
+<pre><code class="language-bash">git checkout -b branch-name commit-id
 </code></pre>
 </div>
 
