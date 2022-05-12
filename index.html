@@ -11,17 +11,44 @@
 </head>
 <body>
 
+
+
+<nav class="py-3 navbarbox">
+  <ul class="nav nav-pills " id="onepage-nav">
+    <li class="nav-item"><a href="#安装" class="nav-link">安装</a></li>
+    <li class="nav-item"><a href="#配置工具" class="nav-link">配置工具</a></li>
+    <li class="nav-item"><a href="#CreateRemote" class="nav-link">Create Remote</a></li>
+    <li class="nav-item"><a href="#生成SSH秘钥" class="nav-link">生成SSH秘钥</a></li>
+    <li class="nav-item"><a href="#查看修改" class="nav-link">查看修改</a></li>
+    <li class="nav-item"><a href="#分支管理" class="nav-link">分支管理</a></li>
+    <li class="nav-item"><a href="#同步更改" class="nav-link">同步更改</a></li>
+    <li class="nav-item"><a href="#跟踪分支" class="nav-link">跟踪分支</a></li>
+    <li class="nav-item"><a href="#cherry-pick" class="nav-link">cherry-pick</a></li>
+    <li class="nav-item"><a href="#回滚" class="nav-link">回滚</a></li>
+    <li class="nav-item"><a href="#Checkout" class="nav-link">Checkout</a></li>
+    <li class="nav-item"><a href="#储藏工作" class="nav-link">储藏工作</a></li>
+    <li class="nav-item"><a href="#Clean" class="nav-link">清理工作目录</a></li>
+    <li class="nav-item"><a href="#推荐拉取推送流程" class="nav-link">拉取推送流程</a></li>
+    <li class="nav-item"><a href="#查看上游" class="nav-link">查看上游</a></li>
+  </ul>
+</nav>
+<div class="app">
 <header>
   <h1 class="h1 text-center">Git 速查表 备忘单</h1>
+  <a href="https://www.progit.cn/" class="text-light">Pro Git 手册</a>
 </header>
-<div class="app container">
+<div class="container">
+
+<div class=" row">
 <div class="masonry">
 
+<!-- 安装 -->
 <div class="item">
   <h2 id="安装">安装</h2>
   <p>Git 官网：<a href="https://git-scm.com/">git-scm.com</a></p>
 </div>
 
+<!-- 配置工具 -->
 <div class="item">
 <h2 id="配置工具">配置工具</h2>
 <p>对你的commit操作设置关联的用户名</p>
@@ -35,8 +62,9 @@
 </code></pre>
 </div>
 
+<!-- CreateRemote -->
 <div class="item">
-<h2 id="create--remote">Create &amp;&amp; Remote</h2>
+<h2 id="CreateRemote">Create Remote</h2>
 <p>当着手于一个新的仓库时，你只需创建一次。要么在本地创建，然后推送到 GitHub；要么通过 clone 一个现有仓库。</p>
 <pre><code class="language-bash">cd ~/my_peoject_directory
 git init
@@ -47,8 +75,15 @@ git init
 <p>将现有目录转换为一个 Git 仓库</p>
 <pre><code class="language-bash">git clone [url]
 </code></pre>
+<p>删除远端仓库</p>
+<pre><code class="language-bash">git remote rm origin
+</code></pre>
+<p>修改远端仓库地址</p>
+<pre><code class="language-bash">git remote set-url origin [new_git_address]
+</code></pre>
 </div>
 
+<!-- 生成SSH秘钥 -->
 <div class="item">
 <h2 id="生成SSH秘钥">生成SSH秘钥</h2>
 <p>你可以按如下命令来生成 sshkey:</p>
@@ -69,6 +104,8 @@ ssh -T git@gitee.com
 
 </div>
 
+
+<!-- 查看修改 -->
 <div class="item">
 <h2 id="查看修改">查看修改</h2>
 <p>查看修改历史</p>
@@ -77,7 +114,7 @@ ssh -T git@gitee.com
 <p>列出文件的历史版本</p>
 <pre><code class="language-bash">git log --fllow [file]
 </code></pre>
-<p>搜索log</p>
+<p>查找带有指定关键字 log</p>
 <pre><code class="language-bash">git log --grep=&lt;pattern&gt;
 </code></pre>
 <p>查看未暂存代码修改</p>
@@ -96,8 +133,9 @@ git show [commit]
 </code></pre>
 </div>
 
+<!-- 分支管理 -->
 <div class="item">
-<h2 id="分支管理-branch">分支管理 branch</h2>
+<h2 id="分支管理">分支管理</h2>
 <p>创建一个新的分支(基于当前分支)</p>
 <pre><code class="language-bash">git branch [branch-name]
 </code></pre>
@@ -122,6 +160,7 @@ git merge FeatureA
 </code></pre>
 </div>
 
+<!-- 同步更改 -->
 <div class="item">
 <h2 id="同步更改">同步更改</h2>
 <p>同步仓库代码</p>
@@ -146,6 +185,31 @@ git pull
 </code></pre>
 </div>
 
+<!-- 跟踪分支 -->
+<div class="item">
+<h2 id="跟踪分支">跟踪分支</h2>
+<p>从一个远程跟踪分支检出一个本地分支会自动创建一个叫做 “跟踪分支”（有时候也叫做 “上游分支”）</p>
+<p>当克隆一个仓库时，它通常会自动地创建一个跟踪 origin/master 的 master 分支</p>
+<p>(git checkout -b [branch] [remotename]/[branch])</p>
+<pre><code class="language-bash">git checkout -b master origin/master
+</code></pre>
+<p>↑这是一个十分常用的操作所以 Git 提供了 --track 快捷方式</p>
+<pre><code class="language-bash">git checkout --track origin/serverfix
+# 把远端仓库 serverfix 检出到本地
+</code></pre>
+<p>如果想要将本地分支与远程分支设置为不同名字，你可以轻松地增加一个不同名字的本地分支的上一个命令</p>
+<pre><code class="language-bash">git checkout -b sf origin/serverfix
+</code></pre>
+<p>想要修改正在跟踪的上游分支，你可以在任意时间使用 -u 或 --set-upstream-to 选项运行 git branch 来显式地设置。</p>
+<pre><code class="language-bash">git branch -u origin/serverfix
+</code></pre>
+<p>记得先fetch一下远端仓库</p>
+<pre><code class="language-bash">git fetch
+git fetch [remotename]
+git fetch --all
+</code></pre>
+</div>
+
 <!-- cherry-pick -->
 <div class="item">
 <h2 id="cherry-pick">Cherry-pick</h2>
@@ -153,31 +217,38 @@ git pull
 <pre><code class="language-bash">git checkout master
 git cherry-pick e43a6
 </code></pre>
+<p>如果你希望把 ADP-test 的最新commit 拉取到 develop，你可以运行</p>
+<pre><code class="language-bash">git checkout develop # 切换到 develop
+git cherry-pick ADP-test
+</code></pre>
 </div>
 
-<!-- git reset -->
+<!-- 回滚 -->
 <div class="item">
-<h2 id="Reset">Reset</h2>
+<h2 id="回滚">回滚 Reset</h2>
 <p>当需需要代码回滚到前一个版本</p>
 <pre><code class="language-bash">git reset --hard HEAD^
-git reset --hard commid_id # 回滚代码到制定版本
+git reset --hard commid_id # 回滚代码到指定版本
 </code></pre>
 </div>
 
 <!-- git Checkout -->
 <div class="item">
 <h2 id="Checkout">Checkout</h2>
-<p>查看commit 的代码(不用 rest)</p>
+<p>快速切换commit的代码</p>
 <pre><code class="language-bash">git checkout commit-id
 </code></pre>
 <p>从 commit-id 检出分支</p>
 <pre><code class="language-bash">git checkout -b branch-name commit-id
 </code></pre>
+<p>返回上一次分支</p>
+<pre><code class="language-bash">git checkout -
+</code></pre>
 </div>
 
-<!-- git stash -->
+<!-- 储藏工作 -->
 <div class="item">
-<h2 id="Stash">储藏工作</h2>
+<h2 id="储藏工作">储藏工作</h2>
 <p>当前工作开发到一半 需要切换分支做其他工作，需要暂时保存当前分支的代码</p>
 <pre><code class="language-bash">git stash
 git stash list # 查看储藏列表
@@ -201,6 +272,36 @@ git clean -f -d
 </code></pre>
 <p>从储藏检出分支</p>
 <pre><code class="language-bash">git stash branch textchange
+</code></pre>
+</div>
+
+<!-- 推荐拉取推送流程 -->
+<div class="item">
+<h2 id="推荐拉取推送流程">拉取-推送流程 (推荐)</h2>
+<p>拉取远端代码</p>
+<pre><code class="language-bash">git fetch origin
+</code></pre>
+<p>比较远端和本地的代码差异</p>
+<pre><code class="language-bash">git log featureA..origin/featureA
+</code></pre>
+<p>确认没问题之后合并进本地</p>
+<pre><code class="language-bash">git merge origin/origin/featureA
+</code></pre>
+<p>然后提交本地的修改</p>
+<pre><code class="language-bash">git commit -am "本地的修改描述."
+git push
+</code></pre>
+
+</div>
+
+<!-- 查看上游 -->
+<div class="item">
+<h2 id="查看上游">查看上游父级分支，查找log </h2>
+<p>查看git分支是基于哪个分支创建的</p>
+<pre><code class="language-bash">git reflog show [childBranch]
+</code></pre>
+<p>查找带有指定关键字 log</p>
+<pre><code class="language-bash">git log --grep=&lt;pattern&gt;
 </code></pre>
 </div>
 
@@ -240,9 +341,18 @@ git clean -f -d
 </div>
 
 </div> <!-- end masonry -->
-</div> <!-- end app -->
+</div>
+</div> <!-- end container -->
+</div>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/prism.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/onepageNav.js"></script>
+<script type="text/javascript">
+  // jQuery('.nav-link').onePgaeNav({
+  //   wrapper : '#onepage-nav'
+  // });
+</script>
 
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/prism.js"></script>
 </body>
 </html>

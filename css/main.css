@@ -93,3 +93,18 @@ pre[class*=language-] {
   background: #f6f7f8;
   box-shadow: 0 6px 8px rgb(85 102 119 / 3%), 0 1px 1px rgb(85 102 119 / 40%);
 } */
+
+
+.app {
+  margin-left: 150px;
+}
+.navbarbox {
+  position: fixed;
+  top: 0;
+  bottom: 0px;
+  width: 150px;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 6px 8px rgb(85 102 119 / 3%), 0 1px 20px rgb(85 102 119 / 24%);
+}
+
