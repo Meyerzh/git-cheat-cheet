@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/prism.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>git-cheat-sheet</title>
+</head>
+<body>
+
+<header>
+  <h1 class="h1 text-center">Git 速查表 备忘单</h1>
+</header>
+<div class="app container">
+<div class="masonry">
+
+<div class="item">
+  <h2 id="安装">安装</h2>
+  <p>Git 官网：<a href="https://git-scm.com/">git-scm.com</a></p>
+</div>
+
+<div class="item">
+<h2 id="配置工具">配置工具</h2>
+<p>对你的commit操作设置关联的用户名</p>
+<pre><code class="language-bash">$ git config --global user.name &quot;[name]&quot;
+</code></pre>
+<p>对你的commit操作设置关联的邮箱地址</p>
+<pre><code class="language-bash">$ git config --global user.email &quot;[address]&quot;
+</code></pre>
+<p>启用有帮助的彩色命令输出</p>
+<pre><code class="language-bash">$ git config --global color.ui auto
+</code></pre>
+</div>
+
+<div class="item">
+<h2 id="create--remote">Create &amp;&amp; Remote</h2>
+<p>当着手于一个新的仓库时，你只需创建一次。要么在本地创建，然后推送到 GitHub；要么通过 clone 一个现有仓库。</p>
+<pre><code class="language-bash">cd ~/my_peoject_directory
+git init
+</code></pre>
+<p>在使用过 <code>git init</code> 命令后，使用以下命令将本地仓库与一个 GitHub 上的空仓库连接起来：</p>
+<pre><code class="language-bash">git remote add origin [url]
+</code></pre>
+<p>将现有目录转换为一个 Git 仓库</p>
+<pre><code class="language-bash">git clone [url]
+</code></pre>
+</div>
+
+<div class="item">
+<h2 id="生成SSH秘钥">生成SSH秘钥</h2>
+<p>你可以按如下命令来生成 sshkey:</p>
+<pre><code class="language-bash">ssh-keygen -t ed25519 -C "your_email@xxx.com"
+</code></pre>
+<p>按照提示完成三次回车，即可生成 ssh key。通过查看 ~/.ssh/id_ed25519.pub 文件内容，获取到你的 public key</p>
+<pre><code class="language-bash">cat ~/.ssh/id_ed25519.pub
+</code></pre>
+<p>复制生成后的 ssh key，通过仓库主页 「管理」->「部署公钥管理」->「添加部署公钥」 ，添加生成的 public key 添加到仓库中。
+</p>
+<p>添加后，在终端（Terminal）中输入
+</p>
+<pre><code class="language-bash">ssh -T git@github.com
+
+ssh -T git@gitee.com
+</code></pre>
+
+</div>
+
+<div class="item">
+<h2 id="查看修改">查看修改</h2>
+<p>查看修改历史</p>
+<pre><code class="language-bash">git log
+</code></pre>
+<p>列出文件的历史版本</p>
+<pre><code class="language-bash">git log --fllow [file]
+</code></pre>
+<p>搜索log</p>
+<pre><code class="language-bash">git log --grep=&lt;pattern&gt;
+</code></pre>
+<p>查看未暂存代码修改</p>
+<pre><code class="language-bash">git diff
+</code></pre>
+<p>查看已暂存代码修改</p>
+<pre><code class="language-bash">git diff --staged
+</code></pre>
+<p>比较两个分支之间的差异</p>
+<pre><code class="language-bash">git diff [first-branch]...[second-branch]
+</code></pre>
+<p>查看当前分支最新的log</p>
+<pre><code class="language-bash">git show
+# or
+git show [commit]
+</code></pre>
+</div>
+
+<div class="item">
+<h2 id="分支管理-branch">分支管理 branch</h2>
+<p>创建一个新的分支(基于当前分支)</p>
+<pre><code class="language-bash">git branch [branch-name]
+</code></pre>
+<p>切换到新创建分支</p>
+<pre><code class="language-bash">git checkout [branch-name]
+</code></pre>
+<p>创建并切换到新分支</p>
+<pre><code class="language-bash">git checkout -b [branch-name]
+</code></pre>
+<p>创建一个新的分支(基于其他分支)</p>
+<pre><code class="language-bash">git checkout -b [branch-name] [branch-other]
+</code></pre>
+<p>返回上一次分支</p>
+<pre><code class="language-bash">git checkout -
+</code></pre>
+<p>删除分支</p>
+<pre><code class="language-bash">git branch -d [branch-name]
+</code></pre>
+<p>Merge <strong>FeatureA</strong> into <strong>Master</strong></p>
+<pre><code class="language-bash">git checkout Master
+git merge FeatureA
+</code></pre>
+</div>
+
+<div class="item">
+<h2 id="同步更改">同步更改</h2>
+<p>同步仓库代码</p>
+<pre><code class="language-bash">git fetch
+</code></pre>
+<p>查看修改的代码</p>
+<pre><code class="language-bash"># 显示不在 featureA, 在 origin/featureA的log
+git log featureA..origin/featureA
+</code></pre>
+<p>将代码合并进本地分支</p>
+<pre><code class="language-bash">git merge origin/featureA
+</code></pre>
+<p>提交自己的本地修改</p>
+<pre><code class="language-bash">git commit -am &#39;small tweak&#39;
+</code></pre>
+<p>将所有本地分支提交上传到 GitHub</p>
+<pre><code class="language-bash">git push
+</code></pre>
+<p>使用来自 GitHub 的对应远端分支的所有新提交更新你当前的本地工作分支。</p>
+<pre><code class="language-bash"># git pull 是 git fetch 和 git merge 的结合
+git pull
+</code></pre>
+</div>
+
+<!-- cherry-pick -->
+<div class="item">
+<h2 id="cherry-pick">Cherry-pick</h2>
+<p>如果你希望将提交 e43a6 拉取到 master 分支，你可以运行：</p>
+<pre><code class="language-bash">git checkout master
+git cherry-pick e43a6
+</code></pre>
+</div>
+
+<!-- git reset -->
+<div class="item">
+<h2 id="Reset">Reset</h2>
+<p>当需需要代码回滚到前一个版本</p>
+<pre><code class="language-bash">git reset --hard HEAD^
+git reset --hard commid_id # 回滚代码到制定版本
+</code></pre>
+</div>
+
+<!-- git stash -->
+<div class="item">
+<h2 id="Stash">储藏工作</h2>
+<p>当前工作开发到一半 需要切换分支做其他工作，需要暂时保存当前分支的代码</p>
+<pre><code class="language-bash">git stash
+git stash list # 查看储藏列表
+git stash apply # 应用最新的储藏
+git stash apply # 引用指定储藏
+git stash pop # 应用最新储藏，然后直接扔掉 删除
+git stash drop # 删除储藏
+git stash --all
+</code></pre>
+<p>从储藏检出分支</p>
+<pre><code class="language-bash">git stash branch textchange
+</code></pre>
+</div>
+
+<!-- 清理工作目录 -->
+<div class="item">
+<h2 id="Clean">Clean</h2>
+<p>删除未追踪的文件 清空工作目录</p>
+<pre><code class="language-bash">git clean -d -n
+git clean -f -d
+</code></pre>
+<p>从储藏检出分支</p>
+<pre><code class="language-bash">git stash branch textchange
+</code></pre>
+</div>
+
+<!-- 帮助 -->
+<div class="item">
+<h2 id="帮助">帮助</h2>
+<p>查看文档帮助</p>
+<pre><code class="language-bash">git &lt;COMMAND&gt; --help
+</code></pre>
+<p>e.g.</p>
+<pre><code class="language-bash">git config --help
+</code></pre>
+<p>你也可以使用 git help config， 在跟一个选项 -w 打开网页版</p>
+<pre><code class="language-bash">git help config -w
+</code></pre>
+</div>
+
+<!-- .gitignore 文件 -->
+<div class="item">
+<h2 id="gitignore-文件">.gitignore 文件</h2>
+<p>有时一些文件最好不要用 Git 跟踪。这通常在名为 <code>.gitignore</code> 的特殊文件中完成。你可以在 <a href="https://github.com/github/gitignore">github.com/github/gitignore</a> 找到有用的 <code>.gitignore</code> 文件模板。</p>
+</div>
+
+<div class="item">
+<h2 id="术语表">术语表</h2>
+<ul>
+<li><strong>git</strong>: 一个开源的分布式版本控制系统</li>
+<li><strong>GitHub</strong>: 一个托管和协作管理 Git 仓库的平台</li>
+<li><strong>commit 提交</strong>: 一个 Git 对象，是你整个仓库的快照的哈希值</li>
+<li><strong>branch 分支</strong>: 一个轻型可移动的 commit 指针</li>
+<li><strong>clone</strong>: 一个仓库的本地版本，包含所有提交和分支</li>
+<li><strong>remote 远端</strong>: 一个 GitHub 上的公共仓库，所有小组成员通过它来交换修改</li>
+<li><strong>fork</strong>: 一个属于另一用户的 GitHub 上的仓库的副本</li>
+<li><strong>pull request 拉取请求</strong>: 一处用于比较和讨论分支上引入的差异，且具有评审、评论、集成测试等功能的地方</li>
+<li><strong>HEAD</strong>: 代表你当前的工作目录。使用<code>git checkout</code> 可移动 HEAD 指针到不同的分支、标记(tags)或提交</li>
+</ul>
+</div>
+
+</div> <!-- end masonry -->
+</div> <!-- end app -->
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/prism.js"></script>
+</body>
+</html>
