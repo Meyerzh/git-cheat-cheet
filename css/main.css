@@ -89,10 +89,6 @@ pre[class*=language-] {
   font-size: 14px;
   margin: 0 0 1rem;
 }
-/* pre[class*=language-] {
-  background: #f6f7f8;
-  box-shadow: 0 6px 8px rgb(85 102 119 / 3%), 0 1px 1px rgb(85 102 119 / 40%);
-} */
 
 .navbarbox {
   position: fixed;
@@ -104,3 +100,15 @@ pre[class*=language-] {
   box-shadow: 0 6px 8px rgb(85 102 119 / 3%), 0 1px 20px rgb(85 102 119 / 24%);
 }
 
+.nav-link {
+  color: #9ec6ff;
+  display: inline-block;
+}
+.navbar-nav-svg {
+  --size: 20px;
+  width: var(--size);
+  height: var(--size);
+}
+.nav-link:focus, .nav-link:hover {
+  color: #fff;
+}
