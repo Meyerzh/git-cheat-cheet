@@ -11,7 +11,8 @@
 </head>
 <body>
 
-<nav class="py-3 navbarbox">
+
+<!-- <nav class="py-3 navbarbox">
   <ul class="nav nav-pills " id="onepage-nav">
     <li class="nav-item"><a href="#安装" class="nav-link">安装</a></li>
     <li class="nav-item"><a href="#配置工具" class="nav-link">配置工具</a></li>
@@ -29,7 +30,7 @@
     <li class="nav-item"><a href="#推荐拉取推送流程" class="nav-link">拉取推送流程</a></li>
     <li class="nav-item"><a href="#查看上游" class="nav-link">查看上游</a></li>
   </ul>
-</nav>
+</nav> -->
 <div class="app">
 <header>
   <h1 class="h1 text-center">Git 速查表 备忘单</h1>
@@ -50,13 +51,18 @@
 <div class="item">
 <h2 id="配置工具">配置工具</h2>
 <p>对你的commit操作设置关联的用户名</p>
-<pre><code class="language-bash">$ git config --global user.name &quot;[name]&quot;
+<pre><code class="language-bash">git config --global user.name &quot;[name]&quot;
 </code></pre>
 <p>对你的commit操作设置关联的邮箱地址</p>
-<pre><code class="language-bash">$ git config --global user.email &quot;[address]&quot;
+<pre><code class="language-bash">git config --global user.email &quot;[address]&quot;
+</code></pre>
+<p>检查配置</p>
+<pre><code class="language-bash">git config --global --list
+git config --global user.name
+git config --global user.email
 </code></pre>
 <p>启用有帮助的彩色命令输出</p>
-<pre><code class="language-bash">$ git config --global color.ui auto
+<pre><code class="language-bash">git config --global color.ui auto
 </code></pre>
 </div>
 
@@ -108,6 +114,9 @@ ssh -T git@gitee.com
 <h2 id="查看修改">查看修改</h2>
 <p>查看修改历史</p>
 <pre><code class="language-bash">git log
+git log -p -2
+# -p 显示每次提交的修改
+# -2 最近两次的提交
 </code></pre>
 <p>列出文件的历史版本</p>
 <pre><code class="language-bash">git log --fllow [file]
@@ -115,11 +124,9 @@ ssh -T git@gitee.com
 <p>查找带有指定关键字 log</p>
 <pre><code class="language-bash">git log --grep=&lt;pattern&gt;
 </code></pre>
-<p>查看未暂存代码修改</p>
-<pre><code class="language-bash">git diff
-</code></pre>
-<p>查看已暂存代码修改</p>
-<pre><code class="language-bash">git diff --staged
+<p>查看代码修改</p>
+<pre><code class="language-bash">git diff # 未暂存diff
+git diff --staged # 已暂存diff
 </code></pre>
 <p>比较两个分支之间的差异</p>
 <pre><code class="language-bash">git diff [first-branch]...[second-branch]
