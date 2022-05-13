@@ -262,9 +262,10 @@ git reset --hard commid_id # 回滚代码到指定版本
 <pre><code class="language-bash">git stash
 git stash list # 查看储藏列表
 git stash apply # 应用最新的储藏
-git stash apply # 引用指定储藏
-git stash pop # 应用最新储藏，然后直接扔掉 删除
+git stash apply stash@{2} # 应用指定储藏
+git stash pop # 应用最新储藏，然后将该储藏删除
 git stash drop # 删除储藏
+git stash drop stash@{0}  # 删除指定储藏
 git stash --all
 </code></pre>
 <p>从储藏检出分支</p>
