@@ -25,15 +25,15 @@
   <script>
     const Docs = {
       repo: "https://github.com/Meyerzh/git-cheat-sheet",
-      branch: "/master/",  // Default Branch is "/master/"
+      branch: "/develop",  // Default Branch is "/master/"
       getRepoUrl: function() {
-        return this.repo + this.branch;
+        return this.repo + '/blob' + this.branch;
       }
     }
 
     window.$docsify = {
       name: 'Git - 文档',
-      repo: Docs.getRepoUrl(),
+      repo: Docs.repo,
       // basePath: './markdown/',
       // homepage: 'Home.md',
       themeColor: '#1347c3',
@@ -58,7 +58,7 @@
           fetch('data/docs.json')
             .then(response => response.json())
             .then(data => {
-              console.log("data", JSON.stringify(data))
+              // console.log("data", JSON.stringify(data))
               this.tool = data.tool;
             })
             .catch(err => console.log(err));
@@ -79,7 +79,9 @@
       plugins: [
         function(hook, vm) {
           hook.beforeEach(function(html) {
-            var url = Docs.getRepoUrl() + vm.route.file;
+            // var url = Docs.getRepoUrl() + vm.route.file;
+            // var url = 'https://github.com/docsifyjs/docsify/blob/develop/docs/' + vm.route.file;
+            var url = 'https://github.com/Meyerzh/git-cheat-sheet/blob/develop/docs/' + vm.route.file;
             var editHtml = '[📝Edit Document](' + url + ')\n';
             return (
               editHtml +
