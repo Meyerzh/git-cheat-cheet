@@ -1,0 +1,103 @@
+:root {
+  /* --theme-color: #db3647; */
+  --sidebar-nav-pagelink-background-image--active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.2' height='7' viewBox='0 0 11.2 7'%3E%3Cpath d='M1.5 1.5l4.1 4 4.1-4' stroke-width='1.5' stroke='rgb(219, 54, 71)' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  --sidebar-nav-pagelink-background-image--collapse: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='11.2' viewBox='0 0 7 11.2'%3E%3Cpath d='M1.5 1.5l4 4.1 -4 4.1' stroke-width='1.5' stroke='rgb(219, 54, 71)' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+}
+
+body {
+  font-size: 16px;
+}
+
+.sidebar>h1 .app-name-link {
+  font-weight: 500;
+}
+
+.deleted-sign,
+.inserted-sign {
+  display: block;
+}
+
+.token.deleted {
+  text-decoration: none;
+  color: #b71c1c;
+  background: #ec5f6726;
+}
+
+.token.inserted {
+  border-bottom: none;
+  text-decoration: none;
+  color: #2e7d32;
+  background: #43a0471f;
+}
+
+.pagination-item-label {
+  line-height: 2em;
+}
+
+.pagination-item-title {
+  font-size: 1.2rem;
+  line-height: 1.4em;
+}
+
+nav.app-nav li ul {
+  min-width: 100px;
+}
+
+#carbonads {
+  box-shadow: none !important;
+  width: auto !important;
+}
+
+.sidebar .app-sub-sidebar {
+  list-style: decimal;
+}
+.app-sub-sidebar li:before {
+  content: "";
+}
+.sidebar .app-sub-sidebar > li {
+  list-style: decimal;
+}
+.sidebar .app-sub-sidebar .app-sub-sidebar > li {
+  list-style: none;
+}
+.sidebar .app-sub-sidebar .app-sub-sidebar > li::before {
+  content: "○";
+}
+.markdown-section h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d8dee4;
+}
+.markdown-section h3 {
+  font-size: 1.6rem;
+  margin: 40px 0 0.6rem;
+}
+
+/* 高亮代码 */
+/* https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript */
+
+pre[data-lang], [data-lang] code {
+  background: #2d2d2d;
+  border-radius: 6px;
+  color: #ccc;
+}
+
+.markdown-section pre>code {
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  padding: 1.2em 5px;
+  color: inherit;
+  font-size: .85rem !important;
+}
+
+
+/* 修复引入 bootstrap 5 之后的样式问题。 */
+.progress {
+  height: 2px;
+}
+
+.sidebar-nav .collapse:not(.show) {
+  display: block;
+}
+
+.markdown-section hr {
+  border-bottom: 1px solid #777;
+}

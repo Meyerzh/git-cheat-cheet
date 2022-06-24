@@ -1,0 +1,514 @@
+{
+  "dxp": {
+    "jsonapi": {
+      "version": "1.0",
+      "meta": {
+        "links": {
+          "self": {
+            "href": "http://jsonapi.org/format/1.0/"
+          }
+        }
+      },
+      "parsed": true
+    },
+    "data": [{
+      "type": "node--rich_page",
+      "id": "4def9d56-f944-4a36-a58b-548ee5bc4bfb",
+      "links": {
+        "self": {
+          "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb?resourceVersion=id%3A20"
+        }
+      },
+      "drupal_internal__nid": 5,
+      "drupal_internal__vid": 20,
+      "langcode": "en",
+      "revision_timestamp": "2022-06-20T06:32:21+00:00",
+      "revision_log": null,
+      "status": true,
+      "title": "Test Compnents 2",
+      "created": "2022-06-20T06:14:04+00:00",
+      "changed": "2022-06-20T06:32:21+00:00",
+      "promote": true,
+      "sticky": false,
+      "default_langcode": true,
+      "revision_translation_affected": null,
+      "moderation_state": "published",
+      "metatag": [{
+          "tag": "link",
+          "attributes": {
+            "rel": "canonical",
+            "href": "http://dxp-demo.ci.ciandt.cn/test-compnents-2"
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "name": "title",
+            "content": "Test Compnents 2 | Enterprise CMS"
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "name": "keywords",
+            "content": ","
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "property": "og:type",
+            "content": "page"
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "property": "og:url",
+            "content": "http://dxp-demo.ci.ciandt.cn/test-compnents-2"
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "property": "og:title",
+            "content": "Test Compnents 2"
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "name": "@type",
+            "content": "Article",
+            "group": "schema_article",
+            "schema_metatag": true
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "name": "name",
+            "content": "Test Compnents 2",
+            "group": "schema_article",
+            "schema_metatag": true
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "name": "twitter:title",
+            "content": "Test Compnents 2"
+          }
+        },
+        {
+          "tag": "meta",
+          "attributes": {
+            "name": "twitter:url",
+            "content": "http://dxp-demo.ci.ciandt.cn/test-compnents-2"
+          }
+        }
+      ],
+      "path": {
+        "alias": "/test-compnents-2",
+        "pid": 13,
+        "langcode": "en"
+      },
+      "publish_on": null,
+      "unpublish_on": null,
+      "publish_state": "_none",
+      "unpublish_state": "_none",
+      "content_translation_source": "und",
+      "content_translation_outdated": false,
+      "alias_reference": "/test-compnents-2",
+      "body": null,
+      "layout_builder__layout": [{
+          "layout_id": "nextgen_layout_fourcol_section",
+          "layout_settings": {
+            "label": "",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": false
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 6,
+                  "md": 3
+                },
+                "components": [
+
+                ]
+              },
+              "col_2": {
+                "id": "col_2",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 6,
+                  "md": 3
+                },
+                "components": [
+
+                ]
+              },
+              "col_3": {
+                "id": "col_3",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 6,
+                  "md": 3
+                },
+                "components": [
+
+                ]
+              },
+              "col_4": {
+                "id": "col_4",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 6,
+                  "md": 3
+                },
+                "components": [
+
+                ]
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "6-6-6-6",
+              "direction-tablet": 0,
+              "desktop": "3-3-3-3",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              }
+            },
+            "classes": {
+              "section_classes": "",
+              "container_classes": "nextgen-layout-block row layout--fourcol-section container"
+            },
+            "context_mapping": [
+
+            ]
+          },
+          "components": [{
+              "uuid": "f79d5531-ed30-4f01-b240-c939f2ee49e0",
+              "region": "col_4",
+              "configuration": {
+                "id": "card",
+                "label": "Media Card",
+                "label_display": false,
+                "provider": "component_card",
+                "block_styles": {
+                  "pb": 0
+                },
+                "component_configuration": "{\"title\":\"Northern Lights2\",\"description\":\"Northern Lights2Northern Lights2Northern Lights2\",\"variant\":\"contained\",\"sharebtn\":\"Share\",\"morebtn\":\"More\",\"imgurl\":\"http:\\/\\/dxp-demo.ciandt.tech\\/sites\\/default\\/files\\/styles\\/component_media_gallery\\/public\\/2022-06\\/iceland-in-pictures-beautiful-places-to-photograph-hallgrimskirkja-church_0.jpg?itok=cqDMJ66x\",\"imageTitle\":\"Northern Lights2\"}",
+                "component_wrapper": "{\"pb\":0}",
+                "media_id": "19",
+                "context_mapping": [
+
+                ]
+              },
+              "weight": 0,
+              "additional": [
+
+              ]
+            },
+            {
+              "uuid": "17772c9f-dcd7-4cf3-86b5-ee13172976d1",
+              "region": "col_2",
+              "configuration": {
+                "id": "card",
+                "label": "Media Card",
+                "label_display": false,
+                "provider": "component_card",
+                "block_styles": {
+                  "pb": 0
+                },
+                "component_configuration": "{\"title\":\"Northern Lights\",\"description\":\"Northern LightsNorthern LightsNorthern LightsNorthern LightsNorthern LightsNorthern Lights\",\"variant\":\"contained\",\"sharebtn\":\"Share\",\"morebtn\":\"More\",\"imgurl\":\"http:\\/\\/dxp-demo.ciandt.tech\\/sites\\/default\\/files\\/styles\\/component_media_gallery\\/public\\/2022-06\\/iceland-in-pictures-beautiful-places-to-photograph-eldhraun-lava-field_0.jpg?itok=0afs5TeF\",\"imageTitle\":\"Northern Lights\"}",
+                "component_wrapper": "{\"pb\":0}",
+                "media_id": "20",
+                "context_mapping": [
+
+                ]
+              },
+              "weight": 0,
+              "additional": [
+
+              ]
+            },
+            {
+              "uuid": "260ddeda-10c5-4666-b285-7527cfa417ac",
+              "region": "col_4",
+              "configuration": {
+                "id": "cit_carousel",
+                "label": "Carousel",
+                "label_display": false,
+                "provider": "component_carousel",
+                "block_styles": {
+                  "pb": 0
+                },
+                "carousel": "",
+                "component_wrapper": "{\"pb\":0}",
+                "slides": [{
+                    "title": "Test slide 1",
+                    "media": "20",
+                    "desc": "Test slide 2Test slide 2"
+                  },
+                  {
+                    "title": "Test slide 2",
+                    "media": "16",
+                    "desc": "Test slide 2Test slide 2"
+                  }
+                ],
+                "component_configuration": "{\"slides\":[{\"img\":\"http:\\/\\/dxp-demo.ciandt.tech\\/sites\\/default\\/files\\/styles\\/component_media_gallery\\/public\\/2022-06\\/iceland-in-pictures-beautiful-places-to-photograph-eldhraun-lava-field_0.jpg?itok=0afs5TeF\",\"title\":\"Test slide 1\",\"desc\":\"Test slide 2Test slide 2\"},{\"img\":\"http:\\/\\/dxp-demo.ciandt.tech\\/sites\\/default\\/files\\/styles\\/component_media_gallery\\/public\\/2022-06\\/iceland-in-pictures-beautiful-places-to-photograph-northern-lights_0.jpg?itok=jrQcNQpm\",\"title\":\"Test slide 2\",\"desc\":\"Test slide 2Test slide 2\"}]}",
+                "context_mapping": [
+
+                ]
+              },
+              "weight": 1,
+              "additional": [
+
+              ]
+            }
+          ],
+          "third_party_settings": [
+
+          ]
+        },
+        {
+          "layout_id": "layout_onecol",
+          "layout_settings": {
+            "label": ""
+          },
+          "components": [{
+              "uuid": "0844a002-843f-46bd-82b6-ade389f076e2",
+              "region": "content",
+              "configuration": {
+                "id": "extra_field_block:node:page:content_moderation_control",
+                "label_display": "0",
+                "context_mapping": {
+                  "entity": "layout_builder.entity"
+                }
+              },
+              "weight": 0,
+              "additional": [
+
+              ]
+            },
+            {
+              "uuid": "2099b670-e66b-42eb-8b66-be7294297773",
+              "region": "content",
+              "configuration": {
+                "id": "extra_field_block:node:page:links",
+                "label_display": "0",
+                "context_mapping": {
+                  "entity": "layout_builder.entity"
+                }
+              },
+              "weight": 1,
+              "additional": [
+
+              ]
+            },
+            {
+              "uuid": "e9ef9680-ea15-4bab-82ff-8c7fbcfb4563",
+              "region": "content",
+              "configuration": {
+                "id": "field_block:node:page:field_layout_canvas",
+                "label_display": "0",
+                "context_mapping": {
+                  "entity": "layout_builder.entity"
+                },
+                "formatter": {
+                  "type": "cohesion_entity_reference_revisions_entity_view",
+                  "label": "hidden",
+                  "settings": {
+                    "view_mode": "default",
+                    "link": false
+                  },
+                  "third_party_settings": [
+
+                  ]
+                }
+              },
+              "weight": 2,
+              "additional": [
+
+              ]
+            }
+          ],
+          "third_party_settings": [
+
+          ]
+        },
+        {
+          "layout_id": "nextgen_layout_onecol",
+          "layout_settings": {
+            "label": "",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": false
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 12
+                },
+                "components": [
+
+                ]
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "12",
+              "direction-tablet": 0,
+              "desktop": "12",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              }
+            },
+            "classes": {
+              "section_classes": "",
+              "container_classes": "nextgen-layout-block row layout--onecol container"
+            },
+            "context_mapping": [
+
+            ]
+          },
+          "components": [
+
+          ],
+          "third_party_settings": [
+
+          ]
+        }
+      ],
+      "metatags": null,
+      "node_type": {
+        "type": "node_type--node_type",
+        "id": "3ef5d73b-39d3-4b0f-8b18-012f4049078f",
+        "meta": {
+          "drupal_internal__target_id": "page"
+        }
+      },
+      "revision_uid": {
+        "data": null,
+        "links": {
+          "self": {
+            "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb/relationships/revision_uid?resourceVersion=id%3A20"
+          }
+        }
+      },
+      "uid": {
+        "data": null,
+        "links": {
+          "self": {
+            "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb/relationships/uid?resourceVersion=id%3A20"
+          }
+        }
+      },
+      "field_categories": {
+        "data": [
+
+        ],
+        "links": {
+          "related": {
+            "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb/field_categories?resourceVersion=id%3A20"
+          },
+          "self": {
+            "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb/relationships/field_categories?resourceVersion=id%3A20"
+          }
+        }
+      },
+      "field_layout_canvas": {
+        "data": null,
+        "links": {
+          "self": {
+            "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb/relationships/field_layout_canvas?resourceVersion=id%3A20"
+          }
+        }
+      },
+      "field_page_image": {
+        "data": null,
+        "links": {
+          "related": {
+            "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb/field_page_image?resourceVersion=id%3A20"
+          },
+          "self": {
+            "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb/relationships/field_page_image?resourceVersion=id%3A20"
+          }
+        }
+      },
+      "field_tags": {
+        "data": [
+
+        ],
+        "links": {
+          "related": {
+            "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb/field_tags?resourceVersion=id%3A20"
+          },
+          "self": {
+            "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb/relationships/field_tags?resourceVersion=id%3A20"
+          }
+        }
+      }
+    }],
+    "links": {
+      "self": {
+        "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page?filter%5Balias_reference%5D%5Bvalue%5D=/test-compnents-2&filter%5Bstatus%5D=1&jsonapi_include=1"
+      }
+    }
+  }
+}

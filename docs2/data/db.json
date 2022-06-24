@@ -1,0 +1,1494 @@
+{
+  "dxp": {
+    "jsonapi": {
+      "version": "1.0",
+      "meta": {
+        "links": {
+          "self": {
+            "href": "http://jsonapi.org/format/1.0/"
+          }
+        }
+      },
+      "parsed": true
+    },
+    "data": [{
+      "type": "node--rich_page",
+      "id": "4def9d56-f944-4a36-a58b-548ee5bc4bfb",
+      "links": {
+        "self": {
+          "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page/4def9d56-f944-4a36-a58b-548ee5bc4bfb?resourceVersion=id%3A20"
+        }
+      },
+      "drupal_internal__nid": 5,
+      "drupal_internal__vid": 20,
+      "langcode": "en",
+      "revision_timestamp": "2022-06-20T06:32:21+00:00",
+      "revision_log": null,
+      "status": true,
+      "title": "Our Promise To You \ud83d\udc68\ud83c\udffb\u200d\u2708\ufe0f",
+      "created": "2021-06-14T03:56:25+00:00",
+      "changed": "2022-05-15T22:59:14+00:00",
+      "promote": false,
+      "sticky": false,
+      "default_langcode": true,
+      "revision_translation_affected": null,
+      "moderation_state": "published",
+      "metatag": [{
+        "tag": "link",
+        "attributes": {
+          "rel": "canonical",
+          "href": "https:\/\/www.flightcentre.com.au\/p\/our-promise"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "name": "title",
+          "content": "Our Promise To You \ud83d\udc68\ud83c\udffb\u200d\u2708\ufe0f | Flight Centre"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "name": "description",
+          "content": "Flight Centre travel experts provide irresistible deals, simple service \u0026 peace of mind. There is nowhere we haven\u0027t been. Experience our experience."
+        }
+      }, {
+        "tag": "link",
+        "attributes": {
+          "rel": "alternate",
+          "hreflang": "en-au",
+          "href": "https:\/\/www.flightcentre.com.au\/p\/our-promise"
+        }
+      }, {
+        "tag": "link",
+        "attributes": {
+          "rel": "alternate",
+          "hreflang": "en-ca",
+          "href": "https:\/\/www.flightcentre.ca\/p\/our-promise"
+        }
+      }, {
+        "tag": "link",
+        "attributes": {
+          "rel": "alternate",
+          "hreflang": "en-gb",
+          "href": "https:\/\/www.flightcentre.co.uk\/p\/our-promise"
+        }
+      }, {
+        "tag": "link",
+        "attributes": {
+          "rel": "alternate",
+          "hreflang": "en-nz",
+          "href": "https:\/\/www.flightcentre.co.nz\/p\/our-promise"
+        }
+      }, {
+        "tag": "link",
+        "attributes": {
+          "rel": "alternate",
+          "hreflang": "en-za",
+          "href": "https:\/\/www.flightcentre.co.za\/p\/our-promise"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:site_name",
+          "content": "Flight Centre"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:type",
+          "content": "article"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:url",
+          "content": "https:\/\/www.flightcentre.com.au\/p\/our-promise"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:title",
+          "content": "Our Promise To You \ud83d\udc68\ud83c\udffb\u200d\u2708\ufe0f"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:description",
+          "content": "Flight Centre travel experts provide irresistible deals, simple service \u0026 peace of mind. There is nowhere we haven\u0027t been. Experience our experience."
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:image:url",
+          "content": "https:\/\/pr-266-fcl-site-fcb.pantheonsite.io\/sites\/default\/files\/Flight-Centre.jpeg"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:image:type",
+          "content": "image\/jpeg"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:image:width",
+          "content": "3300"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:image:height",
+          "content": "825"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "og:updated_time",
+          "content": "2022-05-16T08:59:14+10:00"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "article:published_time",
+          "content": "2021-06-14T13:56:25+10:00"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "property": "article:modified_time",
+          "content": "2022-05-16T08:59:14+10:00"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "name": "doctype",
+          "content": "rich_page",
+          "class": "swiftype",
+          "data-type": "enum"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "name": "scope",
+          "content": "Rich Page",
+          "class": "swiftype",
+          "data-type": "enum"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "name": "published",
+          "content": "Mon, 14\/06\/2021 - 01:56pm",
+          "class": "swiftype",
+          "data-type": "enum"
+        }
+      }, {
+        "tag": "meta",
+        "attributes": {
+          "name": "site",
+          "content": "https:\/\/www.flightcentre.com.au",
+          "class": "swiftype",
+          "data-type": "enum"
+        }
+      }],
+      "path": {
+        "alias": "\/test-compnents",
+        "pid": 7,
+        "langcode": "en-au"
+      },
+      "content_translation_source": "und",
+      "content_translation_outdated": false,
+      "published_at": null,
+      "alias_reference": "\/our-promise",
+      "body": {
+        "value": "\u003Cp\u003EFlight Centre travel experts provide irresistible deals, simple service \u0026amp; peace of mind. There is nowhere we haven\u0027t been. Experience our experience.\u003C\/p\u003E\r\n",
+        "format": "basic_html",
+        "processed": "\u003Cp\u003EFlight Centre travel experts provide irresistible deals, simple service \u0026amp; peace of mind. There is nowhere we haven\u0027t been. Experience our experience.\u003C\/p\u003E",
+        "summary": ""
+      },
+      "layout_builder__layout": [{
+          "layout_id": "one_column",
+          "layout_settings": {
+            "label": "Page header",
+            "container_attributes": {
+              "maxWidth": false
+            },
+            "section_attributes": {
+              "bgcolor": false,
+              "mb": 4
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 12
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {},
+            "form_elements": {},
+            "context_mapping": [],
+            "classes": {
+              "section_classes": " mb-4",
+              "container_classes": "nextgen-layout-block row one-column"
+            }
+          },
+          "components": [{
+            "uuid": "1e41ba63-aeb5-4ced-b830-5f68c78fab5c",
+            "region": "col_1",
+            "configuration": {
+              "id": "page_header",
+              "label": "Page Header",
+              "label_display": false,
+              "provider": "component_page_header",
+              "block_styles": {
+                "pb": 0
+              },
+              "title": "You\u0027re the Centre of our Centre ",
+              "subtitle": "We 8888 want to share the world and our experience with amazing travellers like you because\r\nyou\u2019re the Centre of our Centre. That\u2019s why we make travel easy with excellent service\r\nand irresistible deals for every traveller. We give you peace of mind when you need it\r\nmost and have expertise that you only get from 40 years in the business. When you book\r\nwith Flight Centre you know you\u2019re booking with the best in the business.",
+              "position": "center",
+              "mobile_image": "420",
+              "tablet_image": "421",
+              "desktop_image": "422",
+              "component_configuration": "{\u0022title\u0022:\u0022You\u0027re the 这里现在用的是我自己的数据  Centre of our Centre\u0022,\u0022subtitle\u0022:\u0022We want to share the world and our experience with amazing travellers like you because\\r\\nyou\\u2019re the Centre of our Centre. That\\u2019s why we make travel easy with excellent service\\r\\nand irresistible deals for every traveller. We give you peace of mind when you need it\\r\\nmost and have expertise that you only get from 40 years in the business. When you book\\r\\nwith Flight Centre you know you\\u2019re booking with the best in the business.\u0022,\u0022position\u0022:\u0022center\u0022,\u0022images\u0022:{\u0022sm\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/styles\\\/component_header_banner\\\/public\\\/DD-8594_40thBirthday_40yrs_DOUBLE_SIZE_RICHPAGE_mobile_40STK.jpg?itok=G9FWwGUN\u0022,\u0022md\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/styles\\\/component_header_banner\\\/public\\\/DD-8594_40thBirthday_40yrs_DOUBLE_SIZE_RICHPAGE_1200x170_tablet_40STK%20%281%29.jpg?itok=rYD-KVm-\u0022,\u0022lg\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/styles\\\/component_header_banner\\\/public\\\/DD-8594_40thBirthday_40yrs_DOUBLE_SIZE_RICHPAGE_1920x418_desktop_40STK%20%281%29.jpg?itok=e_HD5-hC\u0022}}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        },
+        {
+          "layout_id": "one_column",
+          "layout_settings": {
+            "label": "Page header",
+            "container_attributes": {
+              "maxWidth": false
+            },
+            "section_attributes": {
+              "bgcolor": false,
+              "mb": 4
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 12
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "12",
+              "direction-tablet": 0,
+              "desktop": "12",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              },
+              "spacing": {
+                "padding_type": "padding_top",
+                "padding_left": "0",
+                "padding_top": "0",
+                "padding_right": "0",
+                "padding_bottom": "0",
+                "margin_type": "margin_bottom",
+                "margin_top": "0",
+                "margin_bottom": "4"
+              },
+              "background_color": false,
+              "padding_type": "padding_top",
+              "padding_left": "0",
+              "padding_top": "0",
+              "padding_right": "0",
+              "padding_bottom": "0",
+              "margin_type": "margin_bottom",
+              "margin_top": "0",
+              "margin_bottom": "4"
+            },
+            "context_mapping": [],
+            "classes": {
+              "section_classes": " mb-4",
+              "container_classes": "nextgen-layout-block row one-column"
+            }
+          },
+          "components": [{
+            "uuid": "1e41ba63-aeb5-4ced-b830-5f68c78fab5c",
+            "region": "col_1",
+            "configuration": {
+              "id": "cit_carousel",
+              "label": "Page Header",
+              "label_display": false,
+              "provider": "component_page_header",
+              "block_styles": {
+                "pb": 0
+              },
+              "title": "You\u0027re the Centre of our Centre ",
+              "subtitle": "We 8888 want to share the world and our experience with amazing travellers like you because\r\nyou\u2019re the Centre of our Centre. That\u2019s why we make travel easy with excellent service\r\nand irresistible deals for every traveller. We give you peace of mind when you need it\r\nmost and have expertise that you only get from 40 years in the business. When you book\r\nwith Flight Centre you know you\u2019re booking with the best in the business.",
+              "position": "center",
+              "mobile_image": "420",
+              "tablet_image": "421",
+              "desktop_image": "422",
+              "component_configuration": "{\"slides\":[{\"img\":\"http:\\/\\/dxp-demo.ci.ciandt.cn\\/sites\\/default\\/files\\/styles\\/component_media_gallery\\/public\\/2022-06\\/iceland-in-pictures-beautiful-places-to-photograph-icelandic-countryside.jpg?itok=JVomb-Mw\",\"title\":\"Icelandic Countryside 777\",\"desc\":\"Traditional Icelandic culture is easy to find in the countryside, where there are turf-top homes on sprawling green landscapes. Areas like the Skogar village on the southern coast are known for these quaint and charming homes. You are also likely to see roaming sheep and Icelandic horses grazing in the fields.\"},{\"img\":\"http:\\/\\/dxp-demo.ci.ciandt.cn\\/sites\\/default\\/files\\/styles\\/component_media_gallery\\/public\\/2022-06\\/iceland-in-pictures-beautiful-places-to-photograph-hallgrimskirkja-church.jpg?itok=4sBH8XcW\",\"title\":\"Hallgrimskirkja Church\",\"desc\":\"One of the most iconic symbols of Iceland is the Hallgrimskirkja Lutheran Church in Reykjavik. It is one of the largest structures in the country, with a majestic presence, especially with the colorful backdrop of the sky in the early mornings or late afternoons.\\r\\n\\r\\nRead More: Top-Rated Tourist Attractions & Things to Do in Reykjavik\"},{\"img\":\"http:\\/\\/dxp-demo.ci.ciandt.cn\\/sites\\/default\\/files\\/styles\\/component_media_gallery\\/public\\/2022-06\\/iceland-in-pictures-beautiful-places-to-photograph-eldhraun-lava-field.jpg?itok=6eHEKbK2\",\"title\":\"Eldhraun Lava Field\",\"desc\":\"The Eldhraun lava field, with its bumpy, moss-covered landscape looks like it could be on another planet. Space crews have used the lava field to train for moonwalks because of the unusual texture. The volcanic landscape is the result of the largest lava flow in the world, which happened in the late 1700s. The Eldhraun lava field landscape is especially colorful at sunrise.\"},{\"img\":\"http:\\/\\/dxp-demo.ci.ciandt.cn\\/sites\\/default\\/files\\/styles\\/component_media_gallery\\/public\\/2022-06\\/iceland-in-pictures-beautiful-places-to-photograph-ring-road.jpg?itok=1D1Qwa6S\",\"title\":\"Ring Road\",\"desc\":\"The 828-mile Ring Road, which runs around the island, is the main road for transportation, but it is also spectacular to use as the subject in photographs. Every turn offers a new backdrop, from rolling green countryside to snow-topped mountains and the ocean. Since there is very little traffic on Route 1, it is easy to stop and capture creative shots.\"}]}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        },
+        {
+          "layout_id": "one_column",
+          "layout_settings": {
+            "label": "",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": false,
+              "pl": 2,
+              "pr": 2
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 12
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "12",
+              "direction-tablet": 0,
+              "desktop": "12",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              },
+              "spacing": {
+                "padding_type": "padding_bottom",
+                "padding_left": "2",
+                "padding_top": "0",
+                "padding_right": "2",
+                "padding_bottom": "0",
+                "margin_type": "margin_top",
+                "margin_top": "0",
+                "margin_bottom": "0"
+              },
+              "background_color": false,
+              "padding_type": "padding_bottom",
+              "padding_left": "2",
+              "padding_top": "0",
+              "padding_right": "2",
+              "padding_bottom": "0",
+              "margin_type": "margin_top",
+              "margin_top": "0",
+              "margin_bottom": "0"
+            },
+            "classes": {
+              "section_classes": " pl-2 pr-2",
+              "container_classes": "nextgen-layout-block row container one-column"
+            },
+            "context_mapping": []
+          },
+          "components": [{
+            "uuid": "687bd2e3-4f68-467c-afbf-8b49ec165034",
+            "region": "col_1",
+            "configuration": {
+              "id": "text",
+              "label": "Text",
+              "label_display": false,
+              "provider": "component_text",
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022title\u0022:\u0022\u0022,\u0022subtitle\u0022:\u0022\u0022,\u0022anchorId\u0022:\u0022\u0022,\u0022textAlign\u0022:\u0022center\u0022,\u0022verticalAlign\u0022:\u0022top\u0022,\u0022content\u0022:\u0022\u003Cscript type=\\\u0022text\\\/javascript\\\u0022 src=\\\u0022\\\/\\\/widget.trustpilot.com\\\/bootstrap\\\/v5\\\/tp.widget.bootstrap.min.js\\\u0022 async\u003E\u003C\\\/script\u003E\\r\\n\u003Cstyle\u003E\\r\\n.fcl-js--MuiBox-root.fcl-js--jss72 section{display:block;}\\r\\n@media screen and (min-width: 452px) {\\r\\n  .trustpilot-widget{height:30px;}\\r\\n}\\r\\n\u003C\\\/style\u003E\\r\\n\u003Cdiv class=\\\u0022trustpilot-widget\\\u0022 data-template-id=\\\u00225419b6ffb0d04a076446a9af\\\u0022 data-businessunit-id=\\\u0022549a886500006400057c536f\\\u0022 data-locale=\\\u0022en-AU\\\u0022 data-style-height=\\\u002245px\\\u0022 data-style-width=\\\u0022100%\\\u0022 data-theme=\\\u0022light\\\u0022\u003E\u003Ca href=\\\u0022https:\\\/\\\/au.trustpilot.com\\\/review\\\/flightcentre.com.au\\\u0022 rel=\\\u0022noopener\\\u0022 target=\\\u0022_blank\\\u0022\u003ETrustpilot\u003C\\\/a\u003E\u003C\\\/div\u003E\u0022}",
+              "component_wrapper": "{\u0022pb\u0022:0}",
+              "context_mapping": []
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        }, {
+          "layout_id": "one_column",
+          "layout_settings": {
+            "label": "CVP\u0027s section",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": false,
+              "pt": 4,
+              "pb": 4,
+              "pl": 2,
+              "pr": 2
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 12
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "12",
+              "direction-tablet": 0,
+              "desktop": "12",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              },
+              "spacing": {
+                "padding_type": "padding_bottom",
+                "padding_left": "2",
+                "padding_top": "4",
+                "padding_right": "2",
+                "padding_bottom": "4",
+                "margin_type": "margin_top",
+                "margin_top": "0",
+                "margin_bottom": "0"
+              },
+              "background_color": false,
+              "padding_type": "padding_bottom",
+              "padding_left": "2",
+              "padding_top": "4",
+              "padding_right": "2",
+              "padding_bottom": "4",
+              "margin_type": "margin_top",
+              "margin_top": "0",
+              "margin_bottom": "0"
+            },
+            "context_mapping": [],
+            "classes": {
+              "section_classes": " pl-2 pt-4 pr-2 pb-4",
+              "container_classes": "nextgen-layout-block row container one-column"
+            }
+          },
+          "components": [{
+            "uuid": "9252c6f0-35f0-4abf-806c-0e179e540de0",
+            "region": "col_1",
+            "configuration": {
+              "id": "card",
+              "label": "Media Card",
+              "label_display": false,
+              "provider": "component_card",
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\"title\":\"Blue Lagoon\",\"description\":\"The Blue Lagoon, located just outside Reykjavik, is possibly one of the most photographed spots in Iceland. The naturally blue geothermal waters are where you will find visitors soaking and relaxing, with the mist rising, adding to the mysterious imagery.\",\"variant\":\"contained\",\"sharebtn\":\"Share\",\"morebtn\":\"More\",\"imgurl\":\"http:\\/\\/dxp-demo.ci.ciandt.cn\\/sites\\/default\\/files\\/styles\\/component_media_gallery\\/public\\/2022-06\\/iceland-in-pictures-beautiful-places-to-photograph-blue-lagoon_0.jpg?itok=Ltnuk0lf\",\"imageTitle\":\"Blue Lagoon\"}",
+              "component_wrapper": "{\"pb\":0}",
+              "media_id": "14",
+              "context_mapping": [
+
+              ]
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        }, {
+          "layout_id": "two_column",
+          "layout_settings": {
+            "label": "Intro section",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": false,
+              "pt": 4,
+              "pb": 4,
+              "pl": 2,
+              "pr": 2
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 3,
+                  "md": 3
+                },
+                "components": []
+              },
+              "col_2": {
+                "id": "col_2",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 9,
+                  "md": 9
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "3-9",
+              "direction-tablet": 0,
+              "desktop": "3-9",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              },
+              "spacing": {
+                "padding_type": "padding_right",
+                "padding_left": "2",
+                "padding_top": "4",
+                "padding_right": "2",
+                "padding_bottom": "4",
+                "margin_type": "margin_top",
+                "margin_top": "0",
+                "margin_bottom": "0"
+              },
+              "background_color": false,
+              "padding_type": "padding_right",
+              "padding_left": "2",
+              "padding_top": "4",
+              "padding_right": "2",
+              "padding_bottom": "4",
+              "margin_type": "margin_top",
+              "margin_top": "0",
+              "margin_bottom": "0"
+            },
+            "context_mapping": [],
+            "classes": {
+              "section_classes": " pl-2 pt-4 pr-2 pb-4",
+              "container_classes": "nextgen-layout-block row container two-column"
+            }
+          },
+          "components": [{
+            "uuid": "9c3ec06e-eadf-4de8-b95d-c836011e156a",
+            "region": "col_1",
+            "configuration": {
+              "id": "text",
+              "label": "Text",
+              "provider": "component_text",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022title\u0022:\u0022\u0022,\u0022subtitle\u0022:\u0022Most useful travel advice according to our experts\u0022,\u0022anchorId\u0022:\u0022\u0022,\u0022textAlign\u0022:\u0022left\u0022,\u0022verticalAlign\u0022:\u0022middle\u0022,\u0022content\u0022:\u0022\u003Cp\u003EMust-have travel advice from the Travel Experts who have been there so you can too.\u003C\\\/p\u003E\\r\\n\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }, {
+            "uuid": "800fa800-1982-4c74-8374-f59411c33cd2",
+            "region": "col_2",
+            "configuration": {
+              "id": "video",
+              "label": "Video",
+              "provider": "component_video",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022src\u0022:\u0022https:\\\/\\\/www.youtube.com\\\/watch?v=zU5a2XZ5j6c\u0022,\u0022height\u0022:\u0022400px\u0022,\u0022width\u0022:\u0022100%\u0022,\u0022videoControls\u0022:{\u0022previewThumbnail\u0022:\u0022\u0022,\u0022showDefaultControls\u0022:false}}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        }, {
+          "layout_id": "two_column",
+          "layout_settings": {
+            "label": "Service section",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": false,
+              "pt": 4,
+              "pb": 4,
+              "pl": 2,
+              "pr": 2
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 3,
+                  "md": 3
+                },
+                "components": []
+              },
+              "col_2": {
+                "id": "col_2",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 9,
+                  "md": 9
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "3-9",
+              "direction-tablet": 0,
+              "desktop": "3-9",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              },
+              "spacing": {
+                "padding_type": "padding_right",
+                "padding_left": "2",
+                "padding_top": "4",
+                "padding_right": "2",
+                "padding_bottom": "4",
+                "margin_type": "margin_top",
+                "margin_top": "0",
+                "margin_bottom": "0"
+              },
+              "background_color": false,
+              "padding_type": "padding_right",
+              "padding_left": "2",
+              "padding_top": "4",
+              "padding_right": "2",
+              "padding_bottom": "4",
+              "margin_type": "margin_top",
+              "margin_top": "0",
+              "margin_bottom": "0"
+            },
+            "context_mapping": [],
+            "classes": {
+              "section_classes": " pl-2 pt-4 pr-2 pb-4",
+              "container_classes": "nextgen-layout-block row container two-column"
+            }
+          },
+          "components": [{
+            "uuid": "7ae651c1-7030-43e2-9589-6717e769d614",
+            "region": "col_1",
+            "configuration": {
+              "id": "image",
+              "label": "Image",
+              "provider": "component_image",
+              "label_display": false,
+              "mobile_image": "25",
+              "tablet_image": "25",
+              "desktop_image": "25",
+              "component_configuration": "{\u0022media\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image5_1.png\u0022,\u0022mediaMd\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image5_1.png\u0022,\u0022mediaSm\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image5_1.png\u0022,\u0022mediaAlt\u0022:\u0022Flight Centre\u0022}",
+              "context_mapping": [],
+              "block_styles": {
+                "pb": 0
+              },
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }, {
+            "uuid": "5b22b11a-1bb6-4503-8e56-0de7884971c2",
+            "region": "col_2",
+            "configuration": {
+              "id": "text",
+              "label": "Text",
+              "provider": "component_text",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022title\u0022:\u0022Service\u0022,\u0022subtitle\u0022:\u0022Travel made easy6666\u0022,\u0022anchorId\u0022:\u0022service\u0022,\u0022textAlign\u0022:\u0022left\u0022,\u0022verticalAlign\u0022:\u0022middle\u0022,\u0022content\u0022:\u0022\u003Cp\u003ENo matter how complicated travel planning gets, it\u0027ll always be easy for you. Just call, chat, email, or pop into a store, and you\u0027ll reach a one-stop-shop for everything travel. Want flights, hotels, cruises, tours or travel insurance? How about something extra special to make your trip even more memorable? Consider it done.\u003C\\\/p\u003E\\r\\n\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        }, {
+          "layout_id": "two_column",
+          "layout_settings": {
+            "label": "Value section",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": false,
+              "pt": 4,
+              "pb": 4,
+              "pl": 2,
+              "pr": 2
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": true
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 9,
+                  "md": 9
+                },
+                "components": []
+              },
+              "col_2": {
+                "id": "col_2",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 3,
+                  "md": 3
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 1,
+              "tablet": "9-3",
+              "direction-tablet": 0,
+              "desktop": "9-3",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              },
+              "spacing": {
+                "padding_type": "padding_left",
+                "padding_left": "2",
+                "padding_top": "4",
+                "padding_right": "2",
+                "padding_bottom": "4",
+                "margin_type": "margin_top",
+                "margin_top": "0",
+                "margin_bottom": "0"
+              },
+              "background_color": false,
+              "padding_type": "padding_left",
+              "padding_left": "2",
+              "padding_top": "4",
+              "padding_right": "2",
+              "padding_bottom": "4",
+              "margin_type": "margin_top",
+              "margin_top": "0",
+              "margin_bottom": "0"
+            },
+            "context_mapping": [],
+            "classes": {
+              "section_classes": " pl-2 pt-4 pr-2 pb-4",
+              "container_classes": "nextgen-layout-block row container two-column xs-reverse"
+            }
+          },
+          "components": [{
+            "uuid": "ad6298af-94d4-4d7b-a834-f75802e05c48",
+            "region": "col_1",
+            "configuration": {
+              "id": "text",
+              "label": "Text",
+              "provider": "component_text",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022title\u0022:\u0022Value\u0022,\u0022subtitle\u0022:\u0022Irresistible deals for every traveller\u0022,\u0022anchorId\u0022:\u0022value\u0022,\u0022textAlign\u0022:\u0022left\u0022,\u0022verticalAlign\u0022:\u0022middle\u0022,\u0022content\u0022:\u0022\u003Cp\u003EEveryone needs a friend who knows what\u0027s trending, when the sales drop, and which ones are a really good deal. When it comes to travel, you\u0027re booking with a collective travel brain that knows how to get the best value, no matter what that means to you.\u003C\\\/p\u003E\\r\\n\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }, {
+            "uuid": "d41fc08a-f918-40f4-adda-f6b0866bddf7",
+            "region": "col_2",
+            "configuration": {
+              "id": "image",
+              "label": "Image",
+              "provider": "component_image",
+              "label_display": false,
+              "mobile_image": "22",
+              "tablet_image": "22",
+              "desktop_image": "22",
+              "component_configuration": "{\u0022media\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image2_1.png\u0022,\u0022mediaMd\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image2_1.png\u0022,\u0022mediaSm\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image2_1.png\u0022,\u0022mediaAlt\u0022:\u0022Flight Centre\u0022}",
+              "context_mapping": [],
+              "block_styles": {
+                "pb": 0
+              },
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        }, {
+          "layout_id": "two_column",
+          "layout_settings": {
+            "label": "Peace of mind section",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": false,
+              "pt": 4,
+              "pb": 4,
+              "pl": 2,
+              "pr": 2
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 3,
+                  "md": 3
+                },
+                "components": []
+              },
+              "col_2": {
+                "id": "col_2",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 9,
+                  "md": 9
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "3-9",
+              "direction-tablet": 0,
+              "desktop": "3-9",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              },
+              "spacing": {
+                "padding_type": "padding_left",
+                "padding_left": "2",
+                "padding_top": "4",
+                "padding_right": "2",
+                "padding_bottom": "4",
+                "margin_type": "margin_top",
+                "margin_top": "0",
+                "margin_bottom": "0"
+              },
+              "background_color": false,
+              "padding_type": "padding_left",
+              "padding_left": "2",
+              "padding_top": "4",
+              "padding_right": "2",
+              "padding_bottom": "4",
+              "margin_type": "margin_top",
+              "margin_top": "0",
+              "margin_bottom": "0"
+            },
+            "context_mapping": [],
+            "classes": {
+              "section_classes": " pl-2 pt-4 pr-2 pb-4",
+              "container_classes": "nextgen-layout-block row container two-column"
+            }
+          },
+          "components": [{
+            "uuid": "61fdd8d2-334a-41a6-8598-eed899b78ee3",
+            "region": "col_1",
+            "configuration": {
+              "id": "image",
+              "label": "Image",
+              "provider": "component_image",
+              "label_display": false,
+              "mobile_image": "23",
+              "tablet_image": "23",
+              "desktop_image": "23",
+              "component_configuration": "{\u0022media\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image3_1.png\u0022,\u0022mediaMd\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image3_1.png\u0022,\u0022mediaSm\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image3_1.png\u0022,\u0022mediaAlt\u0022:\u0022Flight Centre\u0022}",
+              "context_mapping": [],
+              "block_styles": {
+                "pb": 0
+              },
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }, {
+            "uuid": "7d093e2a-bee4-4127-8f53-f5fcea75b4af",
+            "region": "col_2",
+            "configuration": {
+              "id": "text",
+              "label": "Text",
+              "provider": "component_text",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022title\u0022:\u0022Peace of mind\u0022,\u0022subtitle\u0022:\u0022Here for you, always\u0022,\u0022anchorId\u0022:\u0022peace\u0022,\u0022textAlign\u0022:\u0022left\u0022,\u0022verticalAlign\u0022:\u0022middle\u0022,\u0022content\u0022:\u0022\u003Cp\u003EDon\u0027t go it alone. We all know the unexpected can happen, and plans change. Book your travel knowing that you\u0027re backed by Travel Experts who can get you out of any sticky situation. Get clear communication on your booking options, trip deposits, travel credits, changes, insurance and more.\u003C\\\/p\u003E\\r\\n\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        }, {
+          "layout_id": "two_column",
+          "layout_settings": {
+            "label": "Expertise section",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": false,
+              "pt": 4,
+              "pb": 4,
+              "pl": 2,
+              "pr": 2
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": true
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 9,
+                  "md": 9
+                },
+                "components": []
+              },
+              "col_2": {
+                "id": "col_2",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 3,
+                  "md": 3
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 1,
+              "tablet": "9-3",
+              "direction-tablet": 0,
+              "desktop": "9-3",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": false
+              },
+              "spacing": {
+                "padding_type": "padding_left",
+                "padding_left": "2",
+                "padding_top": "4",
+                "padding_right": "2",
+                "padding_bottom": "4",
+                "margin_type": "margin_top",
+                "margin_top": "0",
+                "margin_bottom": "0"
+              },
+              "background_color": false,
+              "padding_type": "padding_left",
+              "padding_left": "2",
+              "padding_top": "4",
+              "padding_right": "2",
+              "padding_bottom": "4",
+              "margin_type": "margin_top",
+              "margin_top": "0",
+              "margin_bottom": "0"
+            },
+            "context_mapping": [],
+            "classes": {
+              "section_classes": " pl-2 pt-4 pr-2 pb-4",
+              "container_classes": "nextgen-layout-block row container two-column xs-reverse"
+            }
+          },
+          "components": [{
+            "uuid": "a43c90f9-db61-4af0-abd3-fb0ca5a255dc",
+            "region": "col_1",
+            "configuration": {
+              "id": "text",
+              "label": "Text",
+              "provider": "component_text",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022title\u0022:\u0022Expertise\u0022,\u0022subtitle\u0022:\u0022Experience our experience\u0022,\u0022anchorId\u0022:\u0022expertise\u0022,\u0022textAlign\u0022:\u0022left\u0022,\u0022verticalAlign\u0022:\u0022middle\u0022,\u0022content\u0022:\u0022\u003Cp\u003EGot travel on the brain? We do too. Get the know-how from the Experts who have been there and can guide you through it, too. Find out where (and when) to go, all the ways to get from A to B, and the experiences you didn\u0027t know you were missing. If we don\u0027t know, we know someone who does. That\u0027s the perk of booking with a company of Travel Experts and partners from around the globe.\u003C\\\/p\u003E\\r\\n\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }, {
+            "uuid": "36d40064-fcac-459c-bab7-8b6109d90981",
+            "region": "col_2",
+            "configuration": {
+              "id": "image",
+              "label": "Image",
+              "provider": "component_image",
+              "label_display": false,
+              "mobile_image": "24",
+              "tablet_image": "24",
+              "desktop_image": "24",
+              "component_configuration": "{\u0022media\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image4_1.png\u0022,\u0022mediaMd\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image4_1.png\u0022,\u0022mediaSm\u0022:\u0022https:\\\/\\\/live-fcl-site-fcb.pantheonsite.io\\\/sites\\\/default\\\/files\\\/cvp_image4_1.png\u0022,\u0022mediaAlt\u0022:\u0022Flight Centre\u0022}",
+              "context_mapping": [],
+              "block_styles": {
+                "pb": 0
+              },
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        }, {
+          "layout_id": "one_column",
+          "layout_settings": {
+            "label": "Button section intro",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": "grey.200",
+              "pt": 4,
+              "pl": 2,
+              "pr": 2
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 12
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "12",
+              "direction-tablet": 0,
+              "desktop": "12",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": "grey.200"
+              },
+              "spacing": {
+                "padding_type": "padding_bottom",
+                "padding_left": "2",
+                "padding_top": "4",
+                "padding_right": "2",
+                "padding_bottom": "0",
+                "margin_type": "margin_top",
+                "margin_top": "0",
+                "margin_bottom": "0"
+              },
+              "background_color": "grey.200",
+              "padding_type": "padding_bottom",
+              "padding_left": "2",
+              "padding_top": "4",
+              "padding_right": "2",
+              "padding_bottom": "0",
+              "margin_type": "margin_top",
+              "margin_top": "0",
+              "margin_bottom": "0"
+            },
+            "context_mapping": [],
+            "classes": {
+              "section_classes": "background-grey-200 pl-2 pt-4 pr-2",
+              "container_classes": "nextgen-layout-block row container one-column"
+            }
+          },
+          "components": [{
+            "uuid": "c98ee5cf-dc67-4d60-a4ee-d6a1607e43ac",
+            "region": "col_1",
+            "configuration": {
+              "id": "text",
+              "label": "Text",
+              "provider": "component_text",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022title\u0022:\u0022No matter how complicated travel gets; we make it easy\u0022,\u0022subtitle\u0022:\u0022\u0022,\u0022anchorId\u0022:\u0022\u0022,\u0022textAlign\u0022:\u0022left\u0022,\u0022content\u0022:\u0022\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        }, {
+          "layout_id": "four_column",
+          "layout_settings": {
+            "label": "Button section",
+            "container_attributes": {
+              "maxWidth": "lg"
+            },
+            "section_attributes": {
+              "bgcolor": "grey.200",
+              "pb": 4,
+              "pt": 4,
+              "pl": 2,
+              "pr": 2
+            },
+            "grid_settings": {
+              "xs": {
+                "column_reverse": false
+              },
+              "sm": {
+                "column_reverse": false
+              },
+              "md": {
+                "column_reverse": false
+              }
+            },
+            "columns": {
+              "col_1": {
+                "id": "col_1",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 6,
+                  "md": 3
+                },
+                "components": []
+              },
+              "col_2": {
+                "id": "col_2",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 6,
+                  "md": 3
+                },
+                "components": []
+              },
+              "col_3": {
+                "id": "col_3",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 6,
+                  "md": 3
+                },
+                "components": []
+              },
+              "col_4": {
+                "id": "col_4",
+                "column_attributes": {
+                  "item": true,
+                  "xs": 12,
+                  "sm": 6,
+                  "md": 3
+                },
+                "components": []
+              }
+            },
+            "breakpoints": {
+              "mobile": "12",
+              "direction-mobile": 0,
+              "tablet": "6-6-6-6",
+              "direction-tablet": 0,
+              "desktop": "3-3-3-3",
+              "direction-desktop": "0"
+            },
+            "form_elements": {
+              "background": {
+                "background_color": "grey.200"
+              },
+              "spacing": {
+                "padding_type": "padding_bottom",
+                "padding_left": "2",
+                "padding_top": "4",
+                "padding_right": "2",
+                "padding_bottom": "4",
+                "margin_type": "margin_bottom",
+                "margin_top": "0",
+                "margin_bottom": "0"
+              },
+              "background_color": "grey.200",
+              "padding_type": "padding_bottom",
+              "padding_left": "2",
+              "padding_top": "4",
+              "padding_right": "2",
+              "padding_bottom": "4",
+              "margin_type": "margin_bottom",
+              "margin_top": "0",
+              "margin_bottom": "0"
+            },
+            "context_mapping": [],
+            "classes": {
+              "section_classes": "background-grey-200 pl-2 pt-4 pr-2 pb-4",
+              "container_classes": "nextgen-layout-block row container four-column"
+            }
+          },
+          "components": [{
+            "uuid": "c7f50488-9786-4304-82f2-1c0ae3227ab3",
+            "region": "col_1",
+            "configuration": {
+              "id": "button",
+              "label": "Button",
+              "provider": "component_button",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022text\u0022:\u0022Help Centre\u0022,\u0022uri\u0022:\u0022https:\\\/\\\/help.flightcentre.com.au\\\/s\u0022,\u0022variant\u0022:\u0022contained\u0022,\u0022icon\u0022:\u0022ArrowForward\u0022,\u0022align\u0022:\u0022left\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }, {
+            "uuid": "57a31624-22ef-4234-b5f0-478a2566e18a",
+            "region": "col_2",
+            "configuration": {
+              "id": "button",
+              "label": "Button",
+              "provider": "component_button",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022text\u0022:\u0022Interest free finance\u0022,\u0022uri\u0022:\u0022https:\\\/\\\/www.flightcentre.com.au\\\/interest-free\u0022,\u0022variant\u0022:\u0022contained\u0022,\u0022icon\u0022:\u0022ArrowForward\u0022,\u0022align\u0022:\u0022left\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }, {
+            "uuid": "641f2f1f-c0c9-42d5-8615-74f7c6255a6f",
+            "region": "col_3",
+            "configuration": {
+              "id": "button",
+              "label": "Button",
+              "provider": "component_button",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022text\u0022:\u0022No online booking fee\\u02c7\u0022,\u0022uri\u0022:\u0022https:\\\/\\\/www.flightcentre.com.au\\\/no-booking-fees\u0022,\u0022variant\u0022:\u0022contained\u0022,\u0022icon\u0022:\u0022ArrowForward\u0022,\u0022align\u0022:\u0022left\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }, {
+            "uuid": "0b4de6ef-07eb-4aa5-8ca5-0027922a5dc3",
+            "region": "col_4",
+            "configuration": {
+              "id": "button",
+              "label": "Button",
+              "provider": "component_button",
+              "label_display": false,
+              "block_styles": {
+                "pb": 0
+              },
+              "component_configuration": "{\u0022text\u0022:\u002224\\\/7 Customer Care\u0022,\u0022uri\u0022:\u0022https:\\\/\\\/www.flightcentre.com.au\\\/247-customer-care\u0022,\u0022variant\u0022:\u0022contained\u0022,\u0022icon\u0022:\u0022ArrowForward\u0022,\u0022align\u0022:\u0022left\u0022}",
+              "context_mapping": [],
+              "component_wrapper": "{\u0022pb\u0022:0}"
+            },
+            "weight": 0,
+            "additional": []
+          }],
+          "third_party_settings": []
+        }
+      ],
+      "metatags": null,
+      "node_type": {
+        "type": "node_type--node_type",
+        "id": "2b936112-c2e0-434c-a76c-964a920e25e3",
+        "meta": {
+          "drupal_internal__target_id": "rich_page"
+        }
+      },
+      "revision_uid": {
+        "type": "user--user",
+        "id": "0483be6a-d600-4524-8ce9-66ed7458b717",
+        "meta": {
+          "drupal_internal__target_id": 8
+        }
+      },
+      "uid": {
+        "type": "user--user",
+        "id": "0483be6a-d600-4524-8ce9-66ed7458b717",
+        "meta": {
+          "drupal_internal__target_id": 8
+        }
+      },
+      "featured_image": {
+        "type": "media--image",
+        "id": "ae686819-d027-4da3-a3fd-abf2299bdf9c",
+        "meta": {
+          "drupal_internal__target_id": 104
+        }
+      },
+      "layout_selection": {
+        "type": "layout--layout",
+        "id": "03332d0a-7333-440d-b4a8-ee38115e69fa",
+        "meta": {
+          "drupal_internal__target_id": "cvp"
+        }
+      }
+    }],
+    "links": {
+      "self": {
+        "href": "http://dxp-demo.ci.ciandt.cn/jsonapi/node/page?filter%5Balias_reference%5D%5Bvalue%5D=/test-compnents&filter%5Bstatus%5D=1&jsonapi_include=1"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "tool": [{
+      "title": "标题",
+      "url": "#",
+      "message": "描述 控制在100个字符内。"
+    },
+    {
+      "title": "Browsersync",
+      "url": "https://browsersync.bootcss.com/",
+      "localdoc": "browsersync",
+      "message": "Browsersync 浏览器同步测试工具，很容易与 Web 平台、构建工具和其他 Node.js 项目集成，替代了大量重复测试劳动。"
+    },
+    {
+      "title": "json-server",
+      "url": "https://www.npmjs.com/package/json-server",
+      "localdoc": "json-server",
+      "message": "json-server用于模拟服务端接口数据，可以根据json数据建立一个完整的web服务。"
+    },
+    {
+      "title": "Git Guide",
+      "url": "https://www.progit.cn/",
+      "localdoc": "git-tip",
+      "message": "Git简易指南 -- 帮助你开始使用 git 的简易指南，木有高深内容。 记录使用Git的一些小技巧"
+    },
+    {
+      "title": "Alpine.js ",
+      "url": "#",
+      "message": "Alpine.js 通过很低的成本提供了与 Vue 或 React 这类大型框架相近的响应式和声明式特性。Alpine.js 的语法几乎完全借用自 Vue。)"
+    },
+    {
+      "title": "TypeScript ",
+      "url": "#",
+      "message": "TypeScript 是由微软开源的编程语言。它是 JavaScript 的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。"
+    }
+  ],
+  "article": [{
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }]
+}
