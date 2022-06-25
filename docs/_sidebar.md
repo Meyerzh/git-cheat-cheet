@@ -1,8 +1,10 @@
+* [首页](/)
 * Git - 基础
-  * [快速开始](start)
+  * [初学者](Beginner)
+  * [入门](Getting-Started)
 
-* Git - 深入
-  * coming soon...
+* CoverMore
+  * [Git规范](CoverMore-Git)
 
 * 优质工具集合
   * [总览目录](Tools/)
