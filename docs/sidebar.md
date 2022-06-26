@@ -2,6 +2,7 @@
 * Git - 基础
   * [初学者](Beginner)
   * [入门](Getting-Started)
+  * [Git-tip](Git-tip)
 
 * CoverMore
   * [Git规范](CoverMore-Git)

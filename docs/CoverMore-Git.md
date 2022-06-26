@@ -57,65 +57,6 @@
 
 ### 开始 Feature
 
-## Git merge
-Merge **FeatureA** into **Master**
-
-```bash
-git checkout master
-
-git merage FeatureA --no-ff
-```
-
-## Git reset
-```bash
-git reset --soft HEAD~
-```
-退回到上一个版本，并将提交返回到暂存区。
-
-### 复习 git 三种状态
-Git 有三种状态，你的文件可能处于其中之一：已提交（committed）、已修改（modified）和已暂存（staged）。
-由此引入 Git 项目的三个工作区域的概念：Git 仓库、工作目录以及暂存区域。
-
-![image-20220626113133226](assets/images/image-20220626113133226.png)
-
-`git reset --soft HEAD~`,
-只是修改了commit记录，并让已提交的的代码返回了暂存。
-也就是说实际在运行的代码没有变化。
-其本质就是要重新编辑 commit 文件。
-
-当你只想查看 上一个commit 代码运行结果是 可以执行：
-```bash
-git checkout HEAD~
-
-git chekcout <commit-id hash> 直接查看某个具体commit代码运行结果。
-```
 
 
 
-## Git blame
-git-blame - 显示上次修改文件每一行的版本和作者
-```bash
-git blame <filename>
-
-git blame -L start,end <filename>
-```
-例如: 查看 test.js 文件
-```bash
-git blame test.js
-
-git blame -L 10,20 test.js // 查看10-20行的修改历史
-
-git blame -L 10,+20 test.js // 查看10再加20行的修改历史
-```
-
-> `--color-lines`
-> 如果它们来自与前一行相同的提交，则默认格式的行注释颜色不同。这使得区分不同提交引入的代码块变得更容易
-> `--color-by-age`
-> 根据默认格式的线条年份对线条注释进行着色
-
-如果您对 v2.6.18 之前的更改不感兴趣，或者对 3 周之前的更改不感兴趣，您可以使用类似于git rev-list 的修订范围说明符：
-```bash
-git blame v2.6.18 .. -- foo
-git blame --since=3.weeks -- foo
-
-```
