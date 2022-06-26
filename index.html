@@ -108,6 +108,18 @@ git log -p -2
 # -p 显示每次提交的修改
 # -2 最近两次的提交
 </code></pre>
+<p>--graph 在日志旁以 ASCII 图形显示分支与合并历史</p>
+<pre><code class="language-bash">git log --graph
+git log --graph --all
+# --graph
+# --all 显示所有的分支
+# --oneline 只显示一行
+# --name-only	仅显示已修改的文件清单
+# --name-status	显示新增、修改、删除的文件清单
+# --date=relative 相对日期 几天前
+# --date=iso 显示数字日期 非英文
+</code></pre>
+
 <p>列出文件的历史版本</p>
 <pre><code class="language-bash">git log --fllow [file]
 </code></pre>
@@ -153,7 +165,7 @@ git show [commit]
 <pre><code class="language-bash">git checkout Master
 git merge FeatureA
 </code></pre>
-请注意，执行<strong>merge</strong>merge命令时候，git 默认会选择 快进更新不会创建合并提交，所以我们建议加上选项 --on-ff
+请注意，执行<strong>merge</strong>命令时候，git 默认会选择快进更新不会创建合并提交，所以建议加上选项 --on-ff
 <a href="./docs/#/CoverMore-Git" target="_blank" >More Info</a>
 </div>
 
@@ -224,9 +236,19 @@ git cherry-pick ADP-test
 <div class="item">
 <h2 id="回滚">回滚 Reset</h2>
 <p>当需需要代码回滚到前一个版本</p>
-<pre><code class="language-bash">git reset --hard HEAD^
+<pre><code class="language-bash">git reset --hard HEAD^ # 回滚到上次提交 丢弃提交代码
+git reset --soft HEAD~ # 退回到上一个版本，保留提交代码返回到暂存区。
+git reset --hard HEAD~ # equivalent to "^"
+git reset --hard HEAD~2 # going back two commits before HEAD, 等于 HEAD^^
+git reset --hard HEAD~3 # going back three commits before HEAD, 等于 HEAD^^^
 git reset --hard commid_id # 回滚代码到指定版本
 </code></pre>
+<p>当只需要查看不同commit下的代码运行结果</p>
+<pre><code class="language-bash">git checkout [commit-id] # 查看具体某个 commit
+git chekout HEAD~ # 返回上一次提价 查看代码运行差别
+git checkout master\develop # 返回 HEAD{0}
+</code></pre>
+
 </div>
 
 <!-- git Checkout -->
