@@ -1,5 +1,4 @@
 :root {
-  /* --theme-color: #db3647; */
   --sidebar-nav-pagelink-background-image--active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.2' height='7' viewBox='0 0 11.2 7'%3E%3Cpath d='M1.5 1.5l4.1 4 4.1-4' stroke-width='1.5' stroke='rgb(219, 54, 71)' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
   --sidebar-nav-pagelink-background-image--collapse: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='11.2' viewBox='0 0 7 11.2'%3E%3Cpath d='M1.5 1.5l4 4.1 -4 4.1' stroke-width='1.5' stroke='rgb(219, 54, 71)' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
 }
@@ -58,11 +57,15 @@ nav.app-nav li ul {
   list-style: decimal;
 }
 .sidebar .app-sub-sidebar .app-sub-sidebar > li {
-  list-style: none;
+  list-style: decimal-leading-zero;
+  font-size: 14px;
+  color: #e0e0e0;
+  font-weight: 900;
+  margin-left: 1em;
 }
-.sidebar .app-sub-sidebar .app-sub-sidebar > li::before {
+/* .sidebar .app-sub-sidebar .app-sub-sidebar > li::before {
   content: "○";
-}
+} */
 .markdown-section h2 {
   padding-bottom: 10px;
   border-bottom: 1px solid #d8dee4;
@@ -70,6 +73,9 @@ nav.app-nav li ul {
 .markdown-section h3 {
   font-size: 1.6rem;
   margin: 40px 0 0.6rem;
+  background: var(--bs-gray-300);
+  padding: 9px;
+  border-radius: 4px;
 }
 
 /* 高亮代码 */
@@ -100,4 +106,20 @@ pre[data-lang], [data-lang] code {
 
 .markdown-section hr {
   border-bottom: 1px solid #777;
+}
+
+.markdown-section blockquote {
+  margin: 1em 0;
+}
+
+
+.markdown-section .my-content {
+  counter-reset: h1
+}
+
+.markdown-section .my-content h3::before{
+  counter-increment: h1;
+  content: counter(h1, decimal-leading-zero) ". ";
+  font-weight: 700;
+  color: #b2bac2;
 }

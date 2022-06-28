@@ -85,8 +85,8 @@ git blame --since=3.weeks -- foo
 
 ```
 
-
 ## 查看父级分支
+
 查看当前千分是基于哪个分支创建。
 ```bash
 git reflog show <childBranch>
