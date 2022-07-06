@@ -2,6 +2,4 @@
 A successful Git branching model
 > https://nvie.com/posts/a-successful-git-branching-model/
 
-Git-branching-model.pdf
-
-<a href="/docs/assets/Git-branching-model.pdf">Git-branching-model.pdf</a>
+<a href="./assets/Git-branching-model.pdf">Git-branching-model.pdf</a>
