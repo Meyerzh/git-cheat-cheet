@@ -4,6 +4,9 @@
   * [入门](Getting-Started)
   * [Git-tip](Git-tip)
 
+* Git-Flow
+  [一个成功的 Git 分支模型](Git-flow)
+
 * CoverMore
   * [Git规范](CoverMore-Git)
 
