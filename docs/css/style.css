@@ -118,11 +118,11 @@ pre[data-lang], [data-lang] code {
 }
 
 
-.markdown-section .my-content {
+.markdown-section section {
   counter-reset: h1
 }
 
-.markdown-section .my-content h3::before{
+.markdown-section section h3::before{
   counter-increment: h1;
   content: counter(h1, decimal-leading-zero) "、";
   font-weight: 700;
