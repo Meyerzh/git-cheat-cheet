@@ -6,16 +6,11 @@
 <section>
 
 ## 创建分支 <small class="opacity-25 fw-light">Create branch</small>
-### 查看本地分支
+### 基于 origin/master 创建 develop 分支
 ```bash
-git branch
+git branch develop origin/master
 ```
-输出
-```bash
-* master
-(END)
-```
-按 Q 键退出
+
 
 
 </section>
