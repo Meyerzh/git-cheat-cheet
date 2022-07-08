@@ -314,7 +314,7 @@ git push meyerz ADP-001 -u  # 推动到远端 fork 仓库
 </section>
 
 
-## 场景模拟 - 进阶流程
+## 场景模拟 - 进阶命令
 
 现在我们用 ADP-002 来演示进阶流程，回顾一下我们大致会经历的git操作有：
 
@@ -339,13 +339,125 @@ git checkout -b ADP-002 origin/master
 
 ![image-20220708140254130](assets/images/image-20220708140254130.png)
 
-从图形界面可以看到 ADP-002、master、 origin/master, 2个本地一个远端分支都处于一个节点。
+从图形界面可以看到 ADP-002、master、 origin/master, 2个本地和1个远端分支都处于一个节点。
 
 
 
-### 开发提交代码
+### 提交 ADP-002
+
+我们随意的做一下代码修改，然后提交代码
+
+```bash
+git add .
+git commit -m "ADP-002: update some code in ADP-002."
+```
+
+![image-20220708143002901](assets/images/image-20220708143002901.png)
+
+↑ 提交ADP-002 的图形界面。
 
 
+
+### 合并 ADP-002
+
+切换代码到 develop
+
+```bash
+git checkout develop
+```
+
+因为在 ADP-002 只有一个提交，我们可以将这个提交捡取到develop
+
+```bash
+# 位于 develop
+git cherry-pick ADP-002 # 将ADP-002 最新的提交 拿到 develop 上
+```
+
+![image-20220708144038098](assets/images/image-20220708144038098.png)
+
+↑ 图形界面
+
+可以看到 cherry-pick 不像 merge 会把 commit 连接 到 develop 上，而是拷贝了一个commit，重新给了 develop。
+
+另外可以看到 develop 前进一个节点 和 origin/develop 分开了。
+
+
+
+### 部署 DEV 环境
+
+现在 ADP-002 代码已经在develop，本地测试没问题，可以直接推送远端仓库
+
+```bash
+git status -sb
+## develop...origin/develop [领先 1]
+```
+
+![image-20220708144541283](assets/images/image-20220708144541283.png)
+
+我会习惯性的查看一下远端的状态，然后再推送
+
+```bash
+git push
+```
+
+因为已经设置了远端仓库 所以直接 `git push` 推送代码就可以了。
+
+![image-20220708145021370](assets/images/image-20220708145021370.png)
+
+↑ 图形界面
+
+ 推送完之后可以看到 develop 和 origin/develop 又保持在同一个节点上。
+
+
+
+### 创建 Pr
+
+创建 pull request 需要先把代码推送到自己 fork 的仓库上
+
+```bash
+git checkout ADP-002
+# 切换到分支 'ADP-002'
+# 您的分支领先 'origin/master' 共 1 个提交。
+#  （使用 "git push" 来发布您的本地提交）
+
+git status -sb
+## ADP-002...origin/master [领先 1]
+
+git push meyerz ADP-002 -u # 重新设置远端分支
+
+枚举对象中: 31, 完成.
+对象计数中: 100% (31/31), 完成.
+使用 16 个线程进行压缩
+压缩对象中: 100% (25/25), 完成.
+写入对象中: 100% (25/25), 2.09 MiB | 424.00 KiB/s, 完成.
+总共 25（差异 3），复用 0（差异 0），包复用 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ADP-002' on GitHub by visiting:
+remote:      https://github.com/MeyerZhao-lab/git-cheat-sheet/pull/new/ADP-002
+remote:
+To github2.com:MeyerZhao-lab/git-cheat-sheet.git
+ * [new branch]      ADP-002 -> ADP-002
+分支 'ADP-002' 设置为跟踪 'meyerz/ADP-002'。
+```
+
+注意：因为我们的ADP-001检出自 origin/master ,所以不可以直接 `git push`, 需要明确指定远程分支并设置 `git push meyerz ADP-002 -u`
+
+> `git branch -vv` 可以查看branch列表对应上游分支
+
+
+
+![image-20220708145846682](assets/images/image-20220708145846682.png)
+
+ ↑ 图形界面
+
+现在ADP-002 也有对应的远端分支
+
+至此 进阶命令结束
+
+
+
+## 场景模拟 - 情景 01
 
 
 
@@ -362,19 +474,6 @@ git checkout ADP-001
 → 分支 'ADP-001' 设置为跟踪 'origin/master'
 ```
 > This step and the next one could be combined into a single step with `checkout -b ADP-001 origin/master`.
-
-
-
-### 开始修改代码
-
-现在我们可以在分支 ADP-001 上修改代码。当代码发生改变的时候：
-
-![image-20220708091618212](assets/images/image-20220708091618212.png)
-
-
-
-
-
 
 
 </section>
