@@ -24,3 +24,5 @@ git branch develop origin/master
 
 ### 这里的代码只是为了区分 develop 和 master
 develop 会前进一个节点
+## 这里的代码是在 ADP-001 开发的。
+删除 console.log
