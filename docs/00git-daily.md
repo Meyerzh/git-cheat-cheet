@@ -457,13 +457,405 @@ To github2.com:MeyerZhao-lab/git-cheat-sheet.git
 
 
 
-## 场景模拟 - 情景 01
+## 场景模拟 - 情景 --no-ff
+
+### 创建 hotfix-001 分支
+
+```bash
+git checkout -b hotfix-001
+```
+
+![image-20220708152324241](assets/images/image-20220708152324241.png)
+
+### 提交 hotfix-001
+
+```bash
+git add .
+git commit -m "hotfix-001: fix some issue."
+```
+
+![image-20220708152543561](assets/images/image-20220708152543561.png)
+
+### 合并 hotfix-001
+
+#### 直接合并 hotfix-001 到 develop
+
+```bash
+git checkout develop
+git merge hotfix-001
+# 更新 32b0093..612f97f
+# Fast-forward
+```
+
+![image-20220708152830954](assets/images/image-20220708152830954.png)
+
+↑ 图形界面
+
+develop 会直接 Fast-forward 合并，不会创建 合并commit。
+
+> 使用命令 `git reset origin/develop --hard` 返回合并之前的代码。
 
 
+
+#### 合并 hotfix-001 到 develop 带上  `--on-ff`
+
+重新合并 hotfix-001，这次我们带上参数 `--on-ff`
+
+```bash
+git merge hotfix-001 --no-ff
+```
+
+![image-20220708153401663](assets/images/image-20220708153401663.png)
+
+↑ 图形界面
+
+这次合并会再创建一个 Merge commit。目前看起来好像没有什么太大意义。
+
+
+
+#### 直接合并 hotfix-001到 master
+
+```bash
+git checkout master
+git merge hotfix-001
+# 更新 b770817..612f97f
+# Fast-forward
+```
+
+![image-20220708154127824](assets/images/image-20220708154127824.png)
+
+↑ 图形界面
+
+直接合并进 mater，可以看到也是一个 Fast-forward 合并，Graph 没有发生变化，只是master 向前移动了节点。
+
+>  使用命令 `git reset origin/master --hard` 返回合并之前的代码。
+
+
+
+#### 合并 hotfix-001 到 master 带上  `--on-ff`
+
+```bash
+git checkout master
+git merge hotfix-001 --no-ff
+# Merge made by the 'ort' strategy.
+```
+
+![image-20220708154850378](assets/images/image-20220708154850378.png)
+
+↑ 图形界面
+
+现在这个图形界面在后期溯源问题的时候就很容易返现 有个hotfix--001 同时提交到了develop 和 master。
 
 <section>
 
+
+
+
+
+
+## 常见命令的 实用选项
+
+```bash
+git status -s # 状态简览
+```
+
+### 查看已暂存和未暂存的修改
+
+```bash
+git status
+git diff
+git diff --staged
+```
+
+### git log
+
+一个常用的选项是 `-p`，用来显示每次提交的内容差异。 你也可以加上 `-2` 来仅显示最近两次提交
+
+```bash
+git log -p
+git log -p -2
+```
+
+比如说，如果你想看到每次提交的简略的统计信息，你可以使用 `--stat` 选项
+
+```bash
+git log --stat
+```
+
+![image-20220708162253679](assets/images/image-20220708162253679.png)
+
+### 撤消对文件的修改
+
+```bash
+git checkout -- CONTRIBUTING.md
+```
+
+
+
+
+
+## 远程仓库操作
+
+### 添加远程仓库
+
+```bash
+git remote # 查看远程分支只有名字
+git remote -v # 查看远程分支名字和地址
+
+git remote add meyerz [your_Fork_repo_url ]
+```
+
+### 查看远程仓库
+
+```bash
+git remote show origin
+```
+
+### 远程仓库的移除与重命名
+
+例如，想要将 `origin` 重命名为 `upstream`，可以用 `git remote rename` 这样做：
+
+```bash
+git remote rename origin upstream
+```
+
+移除一个远程仓库
+
+```bash
+git remote rm origin
+```
+
+
+
+## 打标签
+
+### 列出标签
+
+在 Git 中列出已有的标签是非常简单直观的。 只需要输入 `git tag`：
+
+```bash
+git tag
+```
+
+
+
+## 推送
+
+```bash
+git push origin ADP-001
+
+git push origin ADP-001:ADP-001
+# 把本地的ADP-001 推送到远端的ADP-001
+```
+
+如果并不想让远程仓库上的分支叫做 `ADP-001`
+
+可以使用命令
+
+```bash
+git push origin ADP-001:ADP-001-wip
+```
+
+来将本地的 `ADP-001` 分支推送到远程仓库上的 `ADP-001-wip` 分支。
+
+
+
+## 跟踪分支
+
+```bash
+$ git checkout --track origin/serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+Switched to a new branch 'serverfix'
+```
+
+
+
+```bash
+$ git checkout -b sf origin/serverfix
+Branch sf set up to track remote branch serverfix from origin.
+Switched to a new branch 'sf'
+```
+
+
+
+```bash
+$ git branch -u origin/serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+```
+
+```bash
+$ git branch -vv
+  iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets
+  master    1ae2a45 [origin/master] deploying index fix
+* serverfix f8674d9 [teamone/server-fix-good: ahead 3, behind 1] this should do it
+  testing   5ea463a trying something new
+
+```
+
+
+
+### 删除远程分支
+
+如果想要从服务器上删除 `serverfix` 分支，运行下面的命令：
+
+```bash
+$ git push origin --delete serverfix
+To https://github.com/schacon/simplegit
+ - [deleted]         serverfix
+
+```
+
+
+
+## 变基
+
+![image-20220709064620727](assets/images/image-20220709064620727.png)
+
+只提交 C8 和 C9 ：
+
+```bash
+git rebase --onto master server client # rebase master 移除server之后 的 client
+```
+
+以上命令的意思是：“取出 `client` 分支，找出处于 `client` 分支和 `server` 分支的共同祖先之后的修改(也就是client 上 C3 之后的修改 也就是 C8 和C9)，然后把它们在 `master` 分支上重放一遍”。这理解起来有一点复杂，不过效果非常酷。
+
+
+
+### 提交区间
+
+```bash
+$ git log --no-merges issue54..origin/master
+```
+
+`issue54..origin/master` 语法是一个日志过滤器，要求 Git 只显示所有在后面分支（在本例中是 `origin/master`）但不在前面分支（在本例中是 `issue54`）的提交的列表。 我们将会在 [提交区间](https://www.progit.cn/#_commit_ranges) 中详细介绍这个语法。
+
+
+
+### merge --squash
+
+```bash
+git merge --squash featureB
+```
+
+`--squash` 选项接受被合并的分支上的所有工作，并将其压缩至一个变更集，使仓库变成一个真正的合并发生的状态，而不会真的生成一个合并提交
+
+
+
+
+
+### 检出远程分支
+
+```bash
+$ git remote add jessica git://github.com/jessica/myproject.git
+$ git fetch jessica
+$ git checkout -b rubyclient jessica/ruby-client
+```
+
+对于非持续性的合作，如果你依然想要以这种方式拉取数据的话，你可以对远程版本库的 URL 调用 `git pull` 命令。 这会执行一个一次性的抓取，而不会将该 URL 存为远程引用
+
+```bash
+$ git pull https://github.com/onetimeguy/project
+From https://github.com/onetimeguy/project
+ * branch            HEAD       -> FETCH_HEAD
+Merge made by recursive.
+
+```
+
+### 确定引入了哪些东西
+
+一般来说，你应该对该分支中所有 master 分支尚未包含的提交进行检查。 通过在分支名称前加入 `--not` 选项，你可以排除 master 分支中的提交。 这和我们之前使用的 `master..contrib` 格式是一样的
+
+```bash
+$ git log contrib --not master
+commit 5b6235bd297351589efc4d73316f0a68d484f118
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Fri Oct 24 09:53:59 2008 -0700
+
+    seeing if this helps the gem
+
+commit 7482e0d16d04bea79d0dba8988cc78df655f16a0
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Mon Oct 22 19:38:36 2008 -0700
+
+    updated the gemspec to hopefully work better
+```
+
+如果要查看每次提交所引入的具体修改，你应该记得可以给 `git log` 命令传递 `-p` 选项，这样它会在每次提交后面附加对应的差异（diff）。
+
+
+
+### 三点语法
+
+```bash
+$ git diff master...contrib
+```
+
+
+
+### 变基与拣选工作流
+
+为了保持线性的提交历史，有些维护者更喜欢在 master 分支上对贡献过来的工作进行变基和拣选，而不是直接将其合并。
+
+
+
+## 提交区间
+
+### 双点
+
+![image-20220709073704803](assets/images/image-20220709073704803.png)
+
+↑ *Figure 137. Example history for range selection.*
+
+```bash
+$ git log master..experiment
+D
+C
+```
+
+显示 在 experiment 分支中而不在 master 分支中的提交
+
+### 多点
+
+```bash
+$ git log master...experiment
+F
+E
+D
+C
+```
+
+### --left-right
+
+`log` 命令的一个常用参数是 `--left-right`，它会显示每个提交到底处于哪一侧的分支。 这会让输出数据更加清晰。
+
+```bash
+$ git log --left-right master...experiment
+< F
+< E
+> D
+> C
+```
+
+
+
+
+
+## 清理工作目录
+
+对于工作目录中一些工作或文件，你想做的也许不是储藏而是移除。 `git clean` 命令会帮你做这些事。
+
+你需要谨慎地使用这个命令，因为它被设计为从工作目录中移除未被追踪的文件。 如果你改变主意了，你也不一定能找回来那些文件的内容。 一个更安全的选项是运行 `git stash --all` 来移除每一样东西并存放在栈中。
+
+
+
+
+
+
+
+
+
 ## 创建分支 <small class="opacity-25 fw-light">Create branch</small>
+
 ### 基于 origin/master 创建 ADP-001 分支
 
 ```bash
@@ -480,19 +872,11 @@ git checkout ADP-001
 
 
 
-
 ## 部署dev <small class="opacity-25 fw-light">Deploy dev</small>
+
+
 
 
 ## 拉取请求 <small class="opacity-25 fw-light">Pull request</small>
 
-## 这里的代码是在 ADP-001 开发的。
-删除 console.log
 
-## master 的修改
-
-
-## client 的修改
-
-
-## server 的修改
