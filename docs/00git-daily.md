@@ -7,7 +7,10 @@
 <section>
 
 ## Git 基础操作
-
+拉取远程分支
+```bash
+git checkout --track origin/master
+```
 ### 分支 master
 
 现在只有一个主分支 master ，master 不能直接推送代码。
